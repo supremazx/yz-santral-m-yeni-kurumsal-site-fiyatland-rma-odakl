@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -12,7 +12,7 @@ import { toast } from 'sonner';
 import { api } from '@/lib/api-client';
 import { Loader2 } from 'lucide-react';
 const quoteSchema = z.object({
-  name: z.string().min(2, { message: 'İsim en az 2 karakter olmalıdır.' }),
+  name: z.string().min(2, { message: '��sim en az 2 karakter olmalıdır.' }),
   email: z.string().email({ message: 'Geçerli bir e-posta adresi girin.' }),
   message: z.string().optional(),
 });
@@ -31,7 +31,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
       message: '',
     },
   });
-  async function onSubmit(values: z.infer<typeof quoteSchema>) {
+  const onSubmit = useCallback(async (values: z.infer<typeof quoteSchema>) => {
     setIsLoading(true);
     try {
       await api('/api/leads', {
@@ -47,7 +47,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
     } finally {
       setIsLoading(false);
     }
-  }
+  }, [selectedPlan, form, onOpenChange]);
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
@@ -90,7 +90,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Mesajınız (İsteğe Ba��lı)</FormLabel>
+                  <FormLabel>Mesajınız (İsteğe Bağlı)</FormLabel>
                   <FormControl>
                     <Textarea placeholder="Eklemek istediğiniz notlar..." {...field} />
                   </FormControl>
