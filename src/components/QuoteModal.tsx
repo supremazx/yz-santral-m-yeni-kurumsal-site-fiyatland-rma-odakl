@@ -12,7 +12,7 @@ import { toast } from 'sonner';
 import { api } from '@/lib/api-client';
 import { Loader2 } from 'lucide-react';
 const quoteSchema = z.object({
-  name: z.string().min(2, { message: '��sim en az 2 karakter olmalıdır.' }),
+  name: z.string().min(2, { message: 'İsim en az 2 karakter olmalıdır.' }),
   email: z.string().email({ message: 'Geçerli bir e-posta adresi girin.' }),
   message: z.string().optional(),
 });
@@ -38,7 +38,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
         method: 'POST',
         body: JSON.stringify({ ...values, plan: selectedPlan }),
       });
-      toast.success('Teklif talebiniz başarıyla gönderildi! Sizinle en kısa sürede iletişime geçeceğiz.');
+      toast.success('Teklif talebiniz başarıyla gönderildi! Sizinle en kısa sürede iletişime geçece��iz.');
       form.reset();
       onOpenChange(false);
     } catch (error) {
