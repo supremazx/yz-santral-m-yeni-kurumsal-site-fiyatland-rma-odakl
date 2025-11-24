@@ -11,8 +11,8 @@ interface PricingState {
 export const usePricingStore = create<PricingState>()(
   persist(
     (set) => ({
-      billingCycle: 'monthly',
-      selectedPlan: 'ortanca',
+      billingCycle: 'yearly',
+      selectedPlan: 'scale',
       setBillingCycle: (cycle) => set({ billingCycle: cycle }),
       setSelectedPlan: (planId) => set({ selectedPlan: planId }),
     }),
