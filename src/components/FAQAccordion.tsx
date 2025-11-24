@@ -6,7 +6,7 @@ const faqs = [
     answer: 'Hayır, YZ Santralım tamamen bulut tabanlıdır. İnternet bağlantısı olan herhangi bir cihazdan (bilgisayar, mobil telefon) kullanabilirsiniz. Ekstra donanım maliyetiniz olmaz.',
   },
   {
-    question: 'Mevcut telefon numaralarımı ta��ıyabilir miyim?',
+    question: 'Mevcut telefon numaralarımı taşıyabilir miyim?',
     answer: 'Evet, mevcut sabit (coğrafi veya 0850) numaralarınızı YZ Santralım sistemine kolayca taşıyabilirsiniz. Süreç boyunca size destek oluyoruz.',
   },
   {
