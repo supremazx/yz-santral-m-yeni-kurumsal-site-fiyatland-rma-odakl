@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -11,7 +11,6 @@ import { usePricingStore } from '@/store/usePricingStore';
 import { toast } from 'sonner';
 import { api } from '@/lib/api-client';
 import { Loader2 } from 'lucide-react';
-import { pricingPlans, PlanId } from '@/data/pricing';
 const quoteSchema = z.object({
   name: z.string().min(2, { message: 'İsim en az 2 karakter olmalıdır.' }),
   email: z.string().email({ message: 'Geçerli bir e-posta adresi girin.' }),
@@ -21,9 +20,6 @@ interface QuoteModalProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
 }
-const getPlanTitle = (planId: PlanId) => {
-  return pricingPlans.find(p => p.id === planId)?.title || planId;
-};
 export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
   const [isLoading, setIsLoading] = useState(false);
   const selectedPlan = usePricingStore((s) => s.selectedPlan);
@@ -35,7 +31,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
       message: '',
     },
   });
-  const onSubmit = useCallback(async (values: z.infer<typeof quoteSchema>) => {
+  async function onSubmit(values: z.infer<typeof quoteSchema>) {
     setIsLoading(true);
     try {
       await api('/api/leads', {
@@ -51,14 +47,14 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
     } finally {
       setIsLoading(false);
     }
-  }, [selectedPlan, form, onOpenChange]);
+  }
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Teklif Alın</DialogTitle>
           <DialogDescription>
-            Seçtiğiniz '{getPlanTitle(selectedPlan)}' için bilgilerinizi doldurun. Ekibimiz sizinle iletişime geçecektir.
+            Seçtiğiniz '{selectedPlan}' planı için bilgilerinizi doldurun. Ekibimiz sizinle iletişime geçecektir.
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
@@ -94,7 +90,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Mesajınız (İsteğe Bağlı)</FormLabel>
+                  <FormLabel>Mesajınız (İsteğe Ba��lı)</FormLabel>
                   <FormControl>
                     <Textarea placeholder="Eklemek istediğiniz notlar..." {...field} />
                   </FormControl>
@@ -103,7 +99,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
               )}
             />
             <DialogFooter>
-              <Button type="submit" disabled={isLoading} className="w-full btn-gradient">
+              <Button type="submit" disabled={isLoading} className="w-full">
                 {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
                 Teklif Talebi Gönder
               </Button>

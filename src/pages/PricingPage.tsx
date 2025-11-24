@@ -1,31 +1,34 @@
-import { useState, useCallback } from 'react';
+import { useState } from 'react';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
-import { pricingPlans, PlanId } from '@/data/pricing';
+import { pricingPlans } from '@/data/pricing';
 import { PricingCard } from '@/components/PricingCard';
 import { motion } from 'framer-motion';
 import { usePricingStore } from '@/store/usePricingStore';
 import { QuoteModal } from '@/components/QuoteModal';
+import { FAQAccordion } from '@/components/FAQAccordion';
 export function PricingPage() {
-  const billingCycle = usePricingStore((s) => s.billingCycle);
-  const setBillingCycle = usePricingStore((s) => s.setBillingCycle);
-  const selectedPlan = usePricingStore((s) => s.selectedPlan);
-  const setSelectedPlan = usePricingStore((s) => s.setSelectedPlan);
+  const { billingCycle, setBillingCycle, selectedPlan, setSelectedPlan } = usePricingStore(state => ({
+    billingCycle: state.billingCycle,
+    setBillingCycle: state.setBillingCycle,
+    selectedPlan: state.selectedPlan,
+    setSelectedPlan: state.setSelectedPlan,
+  }));
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isYearly = billingCycle === 'yearly';
-  const handlePlanSelect = useCallback((planId: PlanId) => {
+  const handlePlanSelect = (planId: typeof selectedPlan) => {
     setSelectedPlan(planId);
-    if (planId === 'terzi') {
+    if (planId === 'enterprise') {
       setIsModalOpen(true);
     }
-  }, [setSelectedPlan]);
+  };
   return (
     <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 md:py-10 lg:py-12">
           <section id="pricing" className="py-16 md:py-24">
             <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground">Şeffaf Fiyatland��rma</h1>
+              <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground">Şeffaf Fiyatlandırma</h1>
               <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 İhtiyaçlarınıza en uygun planı seçin. Yıllık ödemelerde %20 indirim kazanın.
               </p>
@@ -56,7 +59,7 @@ export function PricingPage() {
                     plan={plan}
                     isYearly={isYearly}
                     isSelected={selectedPlan === plan.id}
-                    onSelect={handlePlanSelect}
+                    onSelect={() => handlePlanSelect(plan.id)}
                   />
                 </motion.div>
               ))}
@@ -64,6 +67,7 @@ export function PricingPage() {
           </section>
         </div>
       </div>
+      <FAQAccordion />
       <QuoteModal open={isModalOpen} onOpenChange={setIsModalOpen} />
     </>
   );
