@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { pricingPlans } from '@/data/pricing';
@@ -8,20 +8,19 @@ import { usePricingStore } from '@/store/usePricingStore';
 import { QuoteModal } from '@/components/QuoteModal';
 import { FAQAccordion } from '@/components/FAQAccordion';
 export function PricingPage() {
-  const { billingCycle, setBillingCycle, selectedPlan, setSelectedPlan } = usePricingStore(state => ({
-    billingCycle: state.billingCycle,
-    setBillingCycle: state.setBillingCycle,
-    selectedPlan: state.selectedPlan,
-    setSelectedPlan: state.setSelectedPlan,
-  }));
+  // FIX: Replaced unstable object selector with individual primitive selectors to prevent infinite loops.
+  const billingCycle = usePricingStore((s) => s.billingCycle);
+  const setBillingCycle = usePricingStore((s) => s.setBillingCycle);
+  const selectedPlan = usePricingStore((s) => s.selectedPlan);
+  const setSelectedPlan = usePricingStore((s) => s.setSelectedPlan);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isYearly = billingCycle === 'yearly';
-  const handlePlanSelect = (planId: typeof selectedPlan) => {
+  const handlePlanSelect = useCallback((planId: typeof selectedPlan) => {
     setSelectedPlan(planId);
     if (planId === 'enterprise') {
       setIsModalOpen(true);
     }
-  };
+  }, [setSelectedPlan]);
   return (
     <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
