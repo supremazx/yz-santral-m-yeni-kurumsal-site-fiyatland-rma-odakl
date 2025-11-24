@@ -7,7 +7,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 const navLinks = [
   { to: '/', text: 'Ana Sayfa' },
   { to: '/features', text: 'Özellikler' },
-  { to: '/pricing', text: 'Fiyatland��rma' },
+  { to: '/pricing', text: 'Fiyatlandırma' },
   { to: '/about', text: 'Hakkımızda' },
   { to: '/contact', text: 'İletişim' },
 ];
@@ -64,7 +64,7 @@ export function Header() {
               <div className="flex items-center gap-4">
                 <Button asChild variant="outline" className="hidden sm:inline-flex">
                   <a href="tel:+908502445011">
-                    <Phone className="mr-2 h-4 w-4" /> 0850 244 50 11 ile Ara
+                    <Phone className="mr-2 h-4 w-4" /> Bize Ulaşın
                   </a>
                 </Button>
                 <ThemeToggle className="relative top-0 right-0" />

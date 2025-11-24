@@ -60,7 +60,7 @@ export function ContactPage() {
             <div className="flex items-start gap-4">
               <div className="bg-primary/10 p-3 rounded-full"><Phone className="h-6 w-6 text-primary" /></div>
               <div>
-                <h3 className="text-xl font-semibold">Telefon</h3>
+                <h3 className="text-xl font-semibold">Bize Ulaşın</h3>
                 <p className="text-muted-foreground">Satış ve destek hattı</p>
                 <a href="tel:+908502445011" className="text-primary hover:underline">0850 244 50 11</a>
               </div>
