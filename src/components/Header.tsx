@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Phone, Menu, X } from 'lucide-react';
+import { Phone, Menu } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { useIsMobile } from '@/hooks/use-mobile';
@@ -20,7 +20,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
-            <div className="h-8 w-8 rounded-md bg-gradient-to-br from-orange-500 to-red-500" />
+            <div className="h-8 w-8 rounded-md bg-gradient-to-br from-blue-400 to-blue-600" />
             <span className="ml-3 text-xl font-display font-bold">YZ Santralım</span>
           </Link>
           {isMobile ? (
