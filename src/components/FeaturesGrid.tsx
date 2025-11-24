@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Zap, ShieldCheck, BarChart, Users, PhoneCall, Cloud } from 'lucide-react';
+import { Zap, ShieldCheck, BarChart, Users, PhoneCall, Cloud, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 const features = [
   {
@@ -31,6 +31,11 @@ const features = [
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,
     title: 'Yüksek Güvenlik',
     description: 'Verileriniz ve görüşmeleriniz endüstri standardı güvenlik protokolleri ile korunur.',
+  },
+  {
+    icon: <Phone className="h-8 w-8 text-primary" />,
+    title: 'Oto Sesli Arama',
+    description: 'Sesli komutlarla otomatik arama yapın ve müşterilerinizi hızlıca yönlendirin.',
   },
 ];
 export function FeaturesGrid() {

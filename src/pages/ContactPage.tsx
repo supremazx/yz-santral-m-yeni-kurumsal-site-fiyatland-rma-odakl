@@ -8,7 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import { api } from '@/lib/api-client';
 import { Loader2, Mail, Phone, MapPin } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { usePricingStore } from '@/store/usePricingStore';
 const contactSchema = z.object({
   name: z.string().min(2, { message: 'İsim en az 2 karakter olmalıdır.' }),
@@ -23,7 +23,7 @@ export function ContactPage() {
     resolver: zodResolver(contactSchema),
     defaultValues: { name: '', email: '', phone: '', message: '' },
   });
-  async function onSubmit(values: z.infer<typeof contactSchema>) {
+  const onSubmit = useCallback(async (values: z.infer<typeof contactSchema>) => {
     setIsLoading(true);
     try {
       await api('/api/leads', {
@@ -37,7 +37,7 @@ export function ContactPage() {
     } finally {
       setIsLoading(false);
     }
-  }
+  }, [selectedPlan, form]);
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="py-8 md:py-10 lg:py-12">
@@ -70,7 +70,7 @@ export function ContactPage() {
               <div>
                 <h3 className="text-xl font-semibold">Adres</h3>
                 <p className="text-muted-foreground">Teknopark, İstanbul, Türkiye</p>
-                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Haritada G��r</a>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Haritada Gör</a>
               </div>
             </div>
           </div>
