@@ -11,19 +11,15 @@ const faqs = [
   },
   {
     question: 'Fiyatlandırma planları arasında geçiş yapabilir miyim?',
-    answer: 'Kesinlikle. İşletmenizin ihtiyaçları değiştikçe planlar arasında dilediğiniz zaman y��kseltme veya düşürme yapabilirsiniz. Esnek yapıya sahibiz.',
+    answer: 'Kesinlikle. İşletmenizin ihtiyaçları değiştikçe planlar arasında dilediğiniz zaman yükseltme veya düşürme yapabilirsiniz. Esnek yapıya sahibiz.',
   },
   {
-    question: 'Hangi Entegrasyonları sağlıyoruz ?',
-    answer: 'Tüm paketlerimizde CRM, ERP, Telegram ve API bağlantısına sahip olan tüm platformları destekliyoruz.',
-  },
-  {
-    question: 'Yapay Zeka Hizmetine ücret ödeyecek miyim ?',
-    answer: 'Evet, dakika başına yazacağınız yapay zeka prompt ve konuşma uzunluğuna göre bir ücret ödemeniz gerekiyor ama biz bu ücrete ek birşey yansıtmıyoruz.',
+    question: 'API erişimi hangi planlarda mevcut?',
+    answer: 'API erişimi, "Scale" ve "Enterprise" planlarımızda mevcuttur. Kendi yazılımlarınızla (CRM, ERP vb.) entegrasyonlar yapmanıza olanak tanır.',
   },
   {
     question: 'Teknik destek sağlıyor musunuz?',
-    answer: 'Evet, tüm paketlerimizde ücretsiz destek sağlamaktayız. E-posta yoluyla hızlı yanıtlar alabilirsiniz, gelişmiş planlarda öncelikli destek de mevcut.',
+    answer: 'Evet, tüm planlarımızda e-posta desteği sunuyoruz. "Scale" planında öncelikli destek, "Enterprise" planında ise size özel atanmış bir müşteri temsilcisi ile 7/24 destek hizmeti veriyoruz.',
   },
   {
     question: 'Sözleşme süresi ne kadar? Taahhüt var mı?',

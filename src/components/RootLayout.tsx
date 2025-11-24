@@ -10,6 +10,7 @@ interface RootLayoutProps {
   description: string;
 }
 export function RootLayout({ children, title, description }: RootLayoutProps) {
+  const initializeVariant = useAnalyticsStore(s => s.initializeVariant);
   useEffect(() => {
     document.title = title;
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -23,14 +24,9 @@ export function RootLayout({ children, title, description }: RootLayoutProps) {
     }
   }, [title, description]);
   useEffect(() => {
-    // Initialize analytics variant safely on mount
-    try {
-      if (typeof window !== 'undefined') {
-        useAnalyticsStore.getState().initializeVariant();
-      }
-    } catch (e) {
-      console.warn('Failed to initialize analytics variant:', e);
-    }
+    initializeVariant();
+  }, [initializeVariant]);
+  useEffect(() => {
     // Cloudflare Web Analytics
     const script = document.createElement('script');
     script.defer = true;
