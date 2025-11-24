@@ -7,9 +7,9 @@ import { useIsMobile } from '@/hooks/use-mobile';
 const navLinks = [
   { to: '/', text: 'Ana Sayfa' },
   { to: '/features', text: 'Özellikler' },
-  { to: '/pricing', text: 'Fiyatland��rma' },
+  { to: '/pricing', text: 'Fiyatlandırma' },
   { to: '/about', text: 'Hakkımızda' },
-  { to: '/contact', text: 'İletişim' },
+  { to: '/contact', text: '��letişim' },
 ];
 export function Header() {
   const isMobile = useIsMobile();
