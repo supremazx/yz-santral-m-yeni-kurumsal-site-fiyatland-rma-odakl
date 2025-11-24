@@ -38,7 +38,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
         method: 'POST',
         body: JSON.stringify({ ...values, plan: selectedPlan }),
       });
-      toast.success('Teklif talebiniz başarıyla gönderildi! Sizinle en kısa sürede iletişime geçece��iz.');
+      toast.success('Teklif talebiniz başarıyla gönderildi! Sizinle en kısa sürede iletişime geçeceğiz.');
       form.reset();
       onOpenChange(false);
     } catch (error) {
@@ -99,7 +99,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
               )}
             />
             <DialogFooter>
-              <Button type="submit" disabled={isLoading} className="w-full">
+              <Button type="submit" disabled={isLoading} className="w-full btn-gradient">
                 {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
                 Teklif Talebi Gönder
               </Button>
