@@ -62,7 +62,7 @@ export function ContactPage() {
               <div>
                 <h3 className="text-xl font-semibold">Telefon</h3>
                 <p className="text-muted-foreground">Satış ve destek hattı</p>
-                <a href="tel:+908501234567" className="text-primary hover:underline">0850 123 45 67</a>
+                <a href="tel:+908502445011" className="text-primary hover:underline">0850 244 50 11</a>
               </div>
             </div>
             <div className="flex items-start gap-4">
