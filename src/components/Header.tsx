@@ -9,7 +9,7 @@ const navLinks = [
   { to: '/features', text: 'Özellikler' },
   { to: '/pricing', text: 'Fiyatlandırma' },
   { to: '/about', text: 'Hakkımızda' },
-  { to: '/contact', text: '��letişim' },
+  { to: '/contact', text: 'İletişim' },
 ];
 export function Header() {
   const isMobile = useIsMobile();

@@ -14,7 +14,7 @@ export function Hero() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground leading-tight text-balance">
-            İşletmeniz için Akıllı <span className="text-gradient">Bulut Santral</span> Ç��zümleri
+            İşletmeniz için Akıllı <span className="text-gradient">Bulut Santral</span> Çözümleri
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
             YZ Santralım ile iletişim altyapınızı modernize edin, verimliliği artırın ve müşteri memnuniyetini en üst seviyeye taşıyın.
