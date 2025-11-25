@@ -21,7 +21,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
             <div className="h-8 w-8 rounded-md bg-gradient-to-br from-blue-400 to-blue-600" />
-            <span className="ml-3 text-xl font-display font-bold">YZ Santralım</span>
+            <span className="ml-3 text-xl font-display font-bold">Yzsantralim.com</span>
           </Link>
           {isMobile ? (
             <div className="flex items-center gap-2">
