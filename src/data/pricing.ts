@@ -13,7 +13,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'başlangıç',
     title: 'Başlangıç',
-    description: 'Küç��k ekipler ve yeni başlayanlar için ideal.',
+    description: 'Küçük ekipler ve yeni başlayanlar için ideal.',
     monthlyPrice: 2500,
     yearlyPrice: 24000,
     features: [
@@ -29,7 +29,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'orta',
     title: 'Orta',
-    description: 'Büyüyen işletmeler için gelişmiş özellikler.',
+    description: 'Büyüyen işletmeler için gelişmiş ��zellikler.',
     monthlyPrice: 5000,
     yearlyPrice: 48000,
     features: [
@@ -38,11 +38,6 @@ export const pricingPlans: PricingPlan[] = [
       'Yapay Zeka Ajanı Oluşturma',
       'Yapay Zeka için Bilgi Bankası',
       'Yapay Zeka ile Otomatik Arama',
-      'Gelişmiş IVR',
-      'API Erişimi',
-      'Öncelikli Destek',
-      'Detaylı Raporlama',
-      'WhatsApp Entegrasyonu',
       'AI Veri Entegrasyonu',
     ],
     highlight: true,
@@ -51,7 +46,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'full',
     title: 'Full',
-    description: 'Büyük ölçekli operasyonlar için özel ��özümler.',
+    description: 'Büyük ölçekli operasyonlar için özel çözümler.',
     monthlyPrice: 10000,
     yearlyPrice: 96000,
     features: [
