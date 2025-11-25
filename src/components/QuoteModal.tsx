@@ -42,7 +42,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
         method: 'POST',
         body: JSON.stringify({ ...values, plan: selectedPlan }),
       });
-      toast.success('Teklif talebiniz başarıyla gönderildi! Sizinle en kısa sürede iletişime geçeceğiz.');
+      toast.success('Teklif talebiniz başarıyla g��nderildi! Sizinle en kısa sürede iletişime geçeceğiz.');
       form.reset();
       onOpenChange(false);
     } catch (error) {
@@ -94,7 +94,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Mesajınız (İsteğe Ba��lı)</FormLabel>
+                  <FormLabel>Mesajınız (İsteğe Bağl��)</FormLabel>
                   <FormControl>
                     <Textarea placeholder="Eklemek istediğiniz notlar..." {...field} />
                   </FormControl>
