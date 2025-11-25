@@ -15,7 +15,7 @@ import {
 const screenshots = [
   {
     title: 'Kampanyalar Yönetimi',
-    url: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+    url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
     description: 'Tüm sesli arama ve WhatsApp kampanyalarınızı tek bir yerden yönetin.',
   },
   {
@@ -38,7 +38,7 @@ export function PanelScreenshotsPage() {
         <section className="text-center">
           <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground">Panel Ekran Görüntüleri</h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Kullanıcı panelimizin ��nizlemesi – Kampanyalar, AI ajanları ve raporlama araçları.
+            Kullanıcı panelimizin önizlemesi – Kampanyalar, AI ajanları ve raporlama araçları.
           </p>
         </section>
         <section className="py-16 md:py-24">
