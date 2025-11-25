@@ -14,6 +14,7 @@ const FeaturesPage = lazy(() => import('@/pages/FeaturesPage').then(module => ({
 const PricingPage = lazy(() => import('@/pages/PricingPage').then(module => ({ default: module.PricingPage })));
 const AboutPage = lazy(() => import('@/pages/AboutPage').then(module => ({ default: module.AboutPage })));
 const ContactPage = lazy(() => import('@/pages/ContactPage').then(module => ({ default: module.ContactPage })));
+const PanelScreenshotsPage = lazy(() => import('@/pages/PanelScreenshotsPage').then(module => ({ default: module.PanelScreenshotsPage })));
 const createRouteElement = (Component: React.ElementType, title: string, description: string) => (
   <RootLayout title={title} description={description}>
     <Suspense fallback={<LoadingFallback />}>
@@ -24,7 +25,7 @@ const createRouteElement = (Component: React.ElementType, title: string, descrip
 const router = createBrowserRouter([
   {
     path: "/",
-    element: createRouteElement(HomePage, "YZ Santralım - Yapay Zekalı Bulut Santral Çöz��mleri", "İşletmeniz için modern, esnek ve güvenilir bulut santral çözümleri."),
+    element: createRouteElement(HomePage, "YZ Santralım - Yapay Zekalı Bulut Santral Çözümleri", "İşletmeniz için modern, esnek ve güvenilir bulut santral çözümleri."),
     errorElement: <RouteErrorBoundary />,
   },
   {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/pricing",
-    element: createRouteElement(PricingPage, "Fiyatlandırma - YZ Santralım", "İşletmenizin ihtiyaçlarına ve bütçenize en uygun şeffaf fiyatlandırma planlarımızı inceleyin."),
+    element: createRouteElement(PricingPage, "Fiyatlandırma - YZ Santralım", "İşletmenizin ihtiyaçlarına ve b��tçenize en uygun şeffaf fiyatlandırma planlarımızı inceleyin."),
     errorElement: <RouteErrorBoundary />,
   },
   {
@@ -45,6 +46,11 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: createRouteElement(ContactPage, "İletişim - YZ Santralım", "Satış ve destek ekibimizle iletişime geçin. Sorularınızı yanıtlamaktan mutluluk duyarız."),
+    errorElement: <RouteErrorBoundary />,
+  },
+  {
+    path: "/panel-ekran-görüntüleri",
+    element: createRouteElement(PanelScreenshotsPage, "Panel Ekran Görüntüleri - YZ Santralım", "YZ Santralım kullanıcı paneli ekran görüntüleri – Kampanyalar, AI ajanları ve raporlama araçlarının önizlemesi."),
     errorElement: <RouteErrorBoundary />,
   },
 ]);
