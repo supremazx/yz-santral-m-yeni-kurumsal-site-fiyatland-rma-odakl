@@ -17,7 +17,7 @@ export const pricingPlans: PricingPlan[] = [
     monthlyPrice: 2500,
     yearlyPrice: 24000,
     features: [
-      '3 Kullanıcı (1 Admin, 2 Alt Kullanıcı)',
+      '5 Kullanıcı',
       'Sesli Otomatik Arama',
       'Standart Raporlama',
     ],
