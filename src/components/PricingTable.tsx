@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { pricingPlans, PlanId } from '@/data/pricing';
@@ -13,7 +13,7 @@ export function PricingTable() {
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-display font-semibold">Şeffaf Fiyatlandırma</h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            İhtiyaçlarınıza en uygun planı seçin. Yıll��k ödemelerde %20 indirim kazanın.
+            İhtiyaçlarınıza en uygun planı seçin. Yıllık ödemelerde %20 indirim kazanın.
           </p>
         </div>
         <div className="flex items-center justify-center gap-4 my-8">
