@@ -6,7 +6,6 @@ import { PricingCard } from '@/components/PricingCard';
 import { motion } from 'framer-motion';
 import { usePricingStore } from '@/store/usePricingStore';
 import { QuoteModal } from '@/components/QuoteModal';
-import { FAQAccordion } from '@/components/FAQAccordion';
 export function PricingPage() {
   const billingCycle = usePricingStore((s) => s.billingCycle);
   const setBillingCycle = usePricingStore((s) => s.setBillingCycle);
@@ -26,7 +25,7 @@ export function PricingPage() {
         <div className="py-8 md:py-10 lg:py-12">
           <section id="pricing" className="py-16 md:py-24">
             <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground">Şeffaf Fiyatlandırma</h1>
+              <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground">Şeffaf Fiyatland��rma</h1>
               <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 İhtiyaçlarınıza en uygun planı seçin. Yıllık ödemelerde %20 indirim kazanın.
               </p>
@@ -65,7 +64,6 @@ export function PricingPage() {
           </section>
         </div>
       </div>
-      <FAQAccordion />
       <QuoteModal open={isModalOpen} onOpenChange={setIsModalOpen} />
     </>
   );

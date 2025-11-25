@@ -14,6 +14,7 @@ const FeaturesPage = lazy(() => import('@/pages/FeaturesPage').then(module => ({
 const PricingPage = lazy(() => import('@/pages/PricingPage').then(module => ({ default: module.PricingPage })));
 const AboutPage = lazy(() => import('@/pages/AboutPage').then(module => ({ default: module.AboutPage })));
 const ContactPage = lazy(() => import('@/pages/ContactPage').then(module => ({ default: module.ContactPage })));
+const FAQPage = lazy(() => import('@/pages/FAQPage').then(module => ({ default: module.FAQPage })));
 const createRouteElement = (Component: React.ElementType, title: string, description: string) => (
   <RootLayout title={title} description={description}>
     <Suspense fallback={<LoadingFallback />}>
@@ -45,6 +46,11 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: createRouteElement(ContactPage, "İletişim - Yzsantralim.com Yapay Zeka Tabanlı IP Santral Hizmet", "Satış ve destek ekibimizle iletişime geçin. Sorularınızı yanıtlamaktan mutluluk duyarız."),
+    errorElement: <RouteErrorBoundary />,
+  },
+  {
+    path: "/faq",
+    element: createRouteElement(FAQPage, "Sıkça Sorulan Sorular - Yzsantralim.com Yapay Zeka Tabanlı IP Santral Hizmet", "Sıkça sorulan sorularınıza yanıt bulun. YZ Santralım ile ilgili tüm merak ettiklerinizi buradan öğrenebilirsiniz."),
     errorElement: <RouteErrorBoundary />,
   },
 ]);
