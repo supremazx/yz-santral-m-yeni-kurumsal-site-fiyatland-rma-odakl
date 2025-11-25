@@ -40,6 +40,8 @@ export const pricingPlans: PricingPlan[] = [
       'Yapay Zeka ile Otomatik Arama',
       'Sesli Otomatik Arama',
       'AI Veri Entegrasyonu',
+      'WhatsApp Entegrasyonu',
+      'WhatsApp Üzerinden Aylık Ücretle Sınırsız Mesaj Atma',
     ],
     highlight: true,
     cta: 'Orta Planı Seçin',
