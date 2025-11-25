@@ -33,8 +33,11 @@ export const pricingPlans: PricingPlan[] = [
     monthlyPrice: 5000,
     yearlyPrice: 48000,
     features: [
-      '20 Kullanıcı',
       'Tüm Başlangıç Özellikleri',
+      '10 Kullanıcı',
+      'Yapay Zeka Ajanı Oluşturma',
+      'Yapay Zeka için Bilgi Bankası',
+      'Yapay Zeka ile Otomatik Arama',
       'Gelişmiş IVR',
       'API Erişimi',
       'Öncelikli Destek',
@@ -49,7 +52,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'full',
     title: 'Full',
-    description: 'Büyük ölçekli operasyonlar için özel ��özümler.',
+    description: 'Büyük ölçekli operasyonlar için özel çözümler.',
     monthlyPrice: 10000,
     yearlyPrice: 96000,
     features: [
