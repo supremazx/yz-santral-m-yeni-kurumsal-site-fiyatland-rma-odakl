@@ -24,13 +24,10 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="mt-10 flex justify-center"
         >
           <Button size="lg" className="btn-gradient w-full sm:w-auto" onClick={scrollToPricing}>
             Hemen Teklif Al <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-          <Button size="lg" variant="outline" className="w-full sm:w-auto" onClick={scrollToPricing}>
-            Fiyatlandırmayı Gör
           </Button>
         </motion.div>
       </div>

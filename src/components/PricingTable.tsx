@@ -5,7 +5,7 @@ import { pricingPlans, PlanId } from '@/data/pricing';
 import { PricingCard } from './PricingCard';
 import { motion } from 'framer-motion';
 export function PricingTable() {
-  const [isYearly, setIsYearly] = useState(true);
+  const [isYearly, setIsYearly] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<PlanId>('orta');
   return (
     <section id="pricing" className="py-16 md:py-24">
@@ -13,7 +13,7 @@ export function PricingTable() {
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-display font-semibold">Şeffaf Fiyatlandırma</h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            İhtiyaçlarınıza en uygun planı seçin. Yıllık ödemelerde %20 indirim kazanın.
+            İhtiyaçlarınıza en uygun planı seçin. Yıll��k ödemelerde %20 indirim kazanın.
           </p>
         </div>
         <div className="flex items-center justify-center gap-4 my-8">
