@@ -19,7 +19,7 @@ export function AboutPage() {
         <section className="text-center">
           <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground">Hakkımızda</h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            VoIP Piyasasında <span className="font-bold text-foreground/90">18 yıllık</span> deneyimiyle şirketinizin yanında. (Eski Voiprehberi.com kurucularından)
+            VoIP Piyasasında <span className="font-bold text-foreground/90">18 yıllık</span> deneyimiyle şirketinizin yanında. (Eski Voiprehberi.com kurucusu)
           </p>
           <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             YZ Santralım olarak, işletmelerin iletişimini basitleştirmek ve güçlendirmek için en son teknolojiyi kullanıyoruz. Misyonumuz, her ölçekteki şirkete erişilebilir, güvenilir ve yenilikçi bulut santral çözümleri sunmaktır.
