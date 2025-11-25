@@ -12,7 +12,7 @@ export const usePricingStore = create<PricingState>()(
   persist(
     (set) => ({
       billingCycle: 'yearly',
-      selectedPlan: 'scale',
+      selectedPlan: 'orta',
       setBillingCycle: (cycle) => set({ billingCycle: cycle }),
       setSelectedPlan: (planId) => set({ selectedPlan: planId }),
     }),
