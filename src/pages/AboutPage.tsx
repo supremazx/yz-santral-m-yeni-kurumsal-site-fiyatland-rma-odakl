@@ -27,7 +27,7 @@ export function AboutPage() {
                 <CardTitle className="mt-4">Misyonumuz</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground text-balance">Yapay Zekalı İletişim teknolojilerinin kolay kullanımlı ve ulaşılabilir olmasıını hedefliyoruz.</p>
+                <p className="text-muted-foreground text-balance">Yapay Zekalı İletişim teknolojilerinin kolay kullanımlı ve ulaşılabilir olmasını hedefliyoruz.</p>
               </CardContent>
             </Card>
             <Card className="shadow-soft">
@@ -36,7 +36,7 @@ export function AboutPage() {
                 <CardTitle className="mt-4">Vizyonumuz</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground text-balance">Türkiye'nin en çok tercih edilen ve en yenilikçi Yapay Zeka Destekli Bulut Santral Sağlayıcısı olmayı hedefliyoruz.</p>
+                <p className="text-muted-foreground text-balance">Türkiye'nin en çok tercih edilen ve en yenilikçi Yapay Zeka Destekli Bulut Santral Sa��layıcısı olmayı hedefliyoruz.</p>
               </CardContent>
             </Card>
             <Card className="shadow-soft">
@@ -45,7 +45,7 @@ export function AboutPage() {
                 <CardTitle className="mt-4">Ekibimiz</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground text-balance">Alanında uzman, tutkulu ve dinamik bir ekiple geleceği inşa ediyoruz.</p>
+                <p className="text-muted-foreground text-balance">Alanında uzman, tutkulu ve dinamik bir ekiple geleceği in��a ediyoruz.</p>
               </CardContent>
             </Card>
           </div>

@@ -6,7 +6,7 @@ export function FAQPage() {
         <section className="text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-foreground">Sıkça Sorulan Sorular</h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto text-balance">
-            YZ Santralım hizmetleri hakkında merak ettiğiniz her şey burada. Aradığınız cevabı bulamazsanız, bizimle iletişime ge��mekten çekinmeyin.
+            YZ Santralım hizmetleri hakkında merak ettiğiniz her şey burada. Aradığınız cevabı bulamazsanız, bizimle iletişime geçmekten çekinmeyin.
           </p>
         </section>
         <div className="mt-8">

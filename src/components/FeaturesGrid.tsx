@@ -19,7 +19,7 @@ const features = [
   },
   {
     icon: <Cloud className="h-8 w-8 text-primary" />,
-    title: 'Bulut Tabanlı Altyap��',
+    title: 'Bulut Tabanlı Altyapı',
     description: 'Donanım maliyeti olmadan, internet olan her yerden santralinize erişin.',
   },
   {
@@ -40,7 +40,7 @@ const features = [
   {
     icon: <Users className="h-8 w-8 text-primary" />,
     title: 'Ekip Yönetimi',
-    description: 'Kullanıc��larınızı kolayca yönetin, yetkilendirin ve performanslarını izleyin.',
+    description: 'Kullanıcılarınızı kolayca yönetin, yetkilendirin ve performanslarını izleyin.',
   },
   {
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,

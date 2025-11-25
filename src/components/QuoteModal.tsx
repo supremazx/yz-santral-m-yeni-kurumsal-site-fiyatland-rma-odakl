@@ -42,11 +42,11 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
         method: 'POST',
         body: JSON.stringify({ ...values, plan: selectedPlan }),
       });
-      toast.success('Teklif talebiniz başarıyla gönderildi! Sizinle en kısa sürede iletişime geçeceğiz.');
+      toast.success('Teklif talebiniz başarıyla g��nderildi! Sizinle en kısa sürede iletişime geçeceğiz.');
       form.reset();
       onOpenChange(false);
     } catch (error) {
-      toast.error('Bir hata oluştu. Lütfen daha sonra tekrar deneyin.');
+      toast.error('Bir hata oluştu. L��tfen daha sonra tekrar deneyin.');
       console.error(error);
     } finally {
       setIsLoading(false);
@@ -94,7 +94,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Mesajınız (İsteğe Bağlı)</FormLabel>
+                  <FormLabel>Mesajınız (İsteğe Ba��lı)</FormLabel>
                   <FormControl>
                     <Textarea placeholder="Eklemek istediğiniz notlar..." {...field} />
                   </FormControl>
