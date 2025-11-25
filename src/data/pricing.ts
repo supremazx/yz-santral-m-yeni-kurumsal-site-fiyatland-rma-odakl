@@ -14,8 +14,8 @@ export const pricingPlans: PricingPlan[] = [
     id: 'başlangıç',
     title: 'Başlangıç',
     description: 'Küçük ekipler ve yeni başlayanlar için ideal.',
-    monthlyPrice: 99,
-    yearlyPrice: 990,
+    monthlyPrice: 2500,
+    yearlyPrice: 24000,
     features: [
       '5 Kullanıcı',
       'Temel Santral Özellikleri',
@@ -29,14 +29,14 @@ export const pricingPlans: PricingPlan[] = [
     id: 'orta',
     title: 'Orta',
     description: 'Büyüyen işletmeler için gelişmiş özellikler.',
-    monthlyPrice: 249,
-    yearlyPrice: 2490,
+    monthlyPrice: 5000,
+    yearlyPrice: 48000,
     features: [
       '20 Kullanıcı',
       'Tüm Başlangıç Özellikleri',
       'Gelişmiş IVR',
       'API Erişimi',
-      '��ncelikli Destek',
+      'Öncelikli Destek',
       'Oto Sesli Arama',
       'Detaylı Raporlama',
       'WhatsApp Entegrasyonu',
@@ -49,8 +49,8 @@ export const pricingPlans: PricingPlan[] = [
     id: 'full',
     title: 'Full',
     description: 'Büyük ölçekli operasyonlar için özel çözümler.',
-    monthlyPrice: 0, // Custom price
-    yearlyPrice: 0, // Custom price
+    monthlyPrice: 10000,
+    yearlyPrice: 96000,
     features: [
       'Sınırsız Kullanıcı',
       'Tüm Orta Plan Özellikleri',

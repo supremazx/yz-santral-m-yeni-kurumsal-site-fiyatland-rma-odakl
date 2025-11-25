@@ -11,7 +11,6 @@ interface PricingCardProps {
 }
 export function PricingCard({ plan, isYearly, isSelected, onSelect }: PricingCardProps) {
   const price = isYearly ? plan.yearlyPrice : plan.monthlyPrice;
-  const isCustomPrice = price === 0;
   return (
     <Card
       className={cn(
@@ -31,14 +30,8 @@ export function PricingCard({ plan, isYearly, isSelected, onSelect }: PricingCar
       </CardHeader>
       <CardContent className="flex-grow">
         <div className="text-center mb-6">
-          {isCustomPrice ? (
-            <p className="text-4xl font-bold">Özelleştirilmiş</p>
-          ) : (
-            <>
-              <span className="text-4xl font-bold">₺{price}</span>
-              <span className="text-muted-foreground">/{isYearly ? 'yıl' : 'ay'}</span>
-            </>
-          )}
+          <span className="text-4xl font-bold">₺{price}</span>
+          <span className="text-muted-foreground">/{isYearly ? 'yıl' : 'ay'}</span>
         </div>
         <ul className="space-y-3">
           {plan.features.map((feature) => (
