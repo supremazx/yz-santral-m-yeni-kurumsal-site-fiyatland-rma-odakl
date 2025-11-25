@@ -10,7 +10,6 @@ interface RootLayoutProps {
   description: string;
 }
 export function RootLayout({ children, title, description }: RootLayoutProps) {
-  const initializeVariant = useAnalyticsStore(s => s.initializeVariant);
   useEffect(() => {
     document.title = title;
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -23,9 +22,20 @@ export function RootLayout({ children, title, description }: RootLayoutProps) {
       document.head.appendChild(newMeta);
     }
   }, [title, description]);
+
   useEffect(() => {
-    initializeVariant();
-  }, [initializeVariant]);
+    try {
+      if (typeof window !== 'undefined') {
+        const state = useAnalyticsStore.getState();
+        if (state && typeof state.initializeVariant === 'function') {
+          state.initializeVariant();
+        }
+      }
+    } catch (e) {
+      // swallow errors to avoid breaking the app
+    }
+  }, []);
+
   useEffect(() => {
     // Cloudflare Web Analytics
     const script = document.createElement('script');
@@ -53,3 +63,4 @@ export function RootLayout({ children, title, description }: RootLayoutProps) {
     </div>
   );
 }
+//
