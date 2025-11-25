@@ -10,7 +10,6 @@ import '@/index.css';
 import { RootLayout } from '@/components/RootLayout';
 import { LoadingFallback } from '@/components/LoadingFallback';
 const HomePage = lazy(() => import('@/pages/HomePage').then(module => ({ default: module.HomePage })));
-const FeaturesPage = lazy(() => import('@/pages/FeaturesPage').then(module => ({ default: module.FeaturesPage })));
 const PricingPage = lazy(() => import('@/pages/PricingPage').then(module => ({ default: module.PricingPage })));
 const AboutPage = lazy(() => import('@/pages/AboutPage').then(module => ({ default: module.AboutPage })));
 const ContactPage = lazy(() => import('@/pages/ContactPage').then(module => ({ default: module.ContactPage })));
@@ -26,11 +25,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: createRouteElement(HomePage, "Yzsantralim.com Yapay Zeka Tabanlı IP Santral Hizmet", "İşletmeniz için modern, esnek ve güvenilir bulut santral çözümleri."),
-    errorElement: <RouteErrorBoundary />,
-  },
-  {
-    path: "/features",
-    element: createRouteElement(FeaturesPage, "Özellikler - Yzsantralim.com Yapay Zeka Tabanlı IP Santral Hizmet", "Gelişmiş IVR, detaylı raporlama ve daha fazlasıyla YZ Santralım'ın tüm özelliklerini keşfedin."),
     errorElement: <RouteErrorBoundary />,
   },
   {
