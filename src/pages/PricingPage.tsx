@@ -24,6 +24,19 @@ export function PricingPage() {
     <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8 md:py-10 lg:py-12">
+          <section className="py-8 md:py-12 text-center">
+            <div className="max-w-4xl mx-auto">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                alt="Kullanıcı Paneli Önizlemesi"
+                className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
+                loading="lazy"
+              />
+              <p className="mt-4 text-lg text-muted-foreground text-center">
+                Kullanıcı Paneli Önizlemesi
+              </p>
+            </div>
+          </section>
           <section id="pricing" className="py-16 md:py-24">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground">Şeffaf Fiyatlandırma</h1>
