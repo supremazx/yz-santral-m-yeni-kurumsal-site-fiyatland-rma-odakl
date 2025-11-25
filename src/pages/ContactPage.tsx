@@ -24,7 +24,7 @@ export function ContactPage() {
               <div className="bg-primary/10 p-3 rounded-full"><Phone className="h-6 w-6 text-primary" /></div>
               <div>
                 <h3 className="text-xl font-semibold">Telefon & WhatsApp</h3>
-                <p className="text-muted-foreground">Sat��ş ve destek hattı</p>
+                <p className="text-muted-foreground">Satış ve destek hattı</p>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-2">
                   <a href="tel:+908502445011" className="text-primary hover:underline font-medium text-lg">0850 244 50 11</a>
                   <Button asChild className="btn-gradient hover:scale-105 transition-transform">
