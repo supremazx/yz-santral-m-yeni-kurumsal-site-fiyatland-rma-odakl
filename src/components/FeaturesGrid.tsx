@@ -15,7 +15,7 @@ const features = [
   {
     icon: <ExternalLink className="h-8 w-8 text-primary" />,
     title: 'AI Veri Entegrasyonu',
-    description: 'Yapay Zekâ\'dan ald��ğınız bilgileri kendi CRM\'inize, Google Sheets\'e veya Telegram\'ınıza gönderin.',
+    description: 'Yapay Zekâ\'dan aldığınız bilgileri kendi CRM\'inize, Google Sheets\'e veya Telegram\'ınıza gönderin.',
   },
   {
     icon: <Cloud className="h-8 w-8 text-primary" />,
