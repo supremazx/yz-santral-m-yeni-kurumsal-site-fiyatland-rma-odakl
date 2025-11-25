@@ -3,8 +3,6 @@ import { useEffect } from 'react';
 import { errorReporter } from '@/lib/errorReporter';
 import { ErrorFallback } from './ErrorFallback';
 export function RouteErrorBoundary() {
-  // FIX: Call useRouteError unconditionally at the top level per Rules of Hooks.
-  // React Router guarantees this hook works correctly when used in the `errorElement` prop.
   const error = useRouteError();
   useEffect(() => {
     if (error) {
@@ -34,7 +32,6 @@ export function RouteErrorBoundary() {
       });
     }
   }, [error]);
-  // Render error UI using shared ErrorFallback component
   if (isRouteErrorResponse(error)) {
     return (
       <ErrorFallback
