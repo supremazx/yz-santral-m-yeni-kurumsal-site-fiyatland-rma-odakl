@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: 'Teknik destek sağlıyor musunuz?',
-    answer: 'Evet, tüm paketlerimizde ��cretsiz destek sağlamaktayız. E-posta yoluyla hızlı yanıtlar alabilirsiniz, gelişmiş planlarda öncelikli destek de mevcut.',
+    answer: 'Evet, tüm paketlerimizde ücretsiz destek sağlamaktayız. E-posta yoluyla hızlı yanıtlar alabilirsiniz, gelişmiş planlarda öncelikli destek de mevcut.',
   },
   {
     question: 'Sözleşme süresi ne kadar? Taahhüt var mı?',
