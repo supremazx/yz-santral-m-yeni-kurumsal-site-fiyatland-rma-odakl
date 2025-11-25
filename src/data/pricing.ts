@@ -13,7 +13,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'başlangıç',
     title: 'Başlangıç',
-    description: 'Küçük ekipler ve yeni başlayanlar için ideal.',
+    description: 'Küç��k ekipler ve yeni başlayanlar için ideal.',
     monthlyPrice: 2500,
     yearlyPrice: 24000,
     features: [
@@ -41,7 +41,6 @@ export const pricingPlans: PricingPlan[] = [
       'Gelişmiş IVR',
       'API Erişimi',
       'Öncelikli Destek',
-      'Oto Sesli Arama',
       'Detaylı Raporlama',
       'WhatsApp Entegrasyonu',
       'AI Veri Entegrasyonu',
@@ -52,7 +51,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'full',
     title: 'Full',
-    description: 'Büyük ölçekli operasyonlar için özel çözümler.',
+    description: 'Büyük ölçekli operasyonlar için özel ��özümler.',
     monthlyPrice: 10000,
     yearlyPrice: 96000,
     features: [
