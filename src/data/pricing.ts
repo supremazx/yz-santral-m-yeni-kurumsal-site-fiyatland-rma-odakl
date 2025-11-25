@@ -29,7 +29,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'orta',
     title: 'Orta',
-    description: 'Büyüyen işletmeler için gelişmiş ��zellikler.',
+    description: 'Büyüyen işletmeler için gelişmiş özellikler.',
     monthlyPrice: 5000,
     yearlyPrice: 48000,
     features: [
@@ -38,6 +38,7 @@ export const pricingPlans: PricingPlan[] = [
       'Yapay Zeka Ajanı Oluşturma',
       'Yapay Zeka için Bilgi Bankası',
       'Yapay Zeka ile Otomatik Arama',
+      'Sesli Otomatik Arama',
       'AI Veri Entegrasyonu',
     ],
     highlight: true,
