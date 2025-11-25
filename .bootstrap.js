@@ -79,7 +79,8 @@ function updateWranglerJsonc() {
 function runSetupCommands() {
     const commands = [
     "bun add react-intersection-observer@^9.10.0",
-    "bun remove next-themes"
+    "bun remove next-themes",
+    "bun install next-themes"
 ];
     
     if (commands.length === 0) {
