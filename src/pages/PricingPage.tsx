@@ -27,7 +27,7 @@ export function PricingPage() {
           <section className="py-8 md:py-12 text-center">
             <div className="max-w-4xl mx-auto">
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
                 alt="Kullanıcı Paneli Önizlemesi"
                 className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg"
                 loading="lazy"
@@ -41,7 +41,7 @@ export function PricingPage() {
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground">Şeffaf Fiyatlandırma</h1>
               <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-                İhtiyaçlarınıza en uygun planı seçin. Yıllık ödemelerde %20 indirim kazanın.
+                İhtiyaçlar��nıza en uygun planı seçin. Yıllık ödemelerde %20 indirim kazanın.
               </p>
             </div>
             <div className="flex items-center justify-center gap-4 my-8">
