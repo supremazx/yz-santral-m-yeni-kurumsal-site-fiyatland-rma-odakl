@@ -31,7 +31,7 @@ export function Footer() {
         </div>
         <div className="mt-8 border-t border-slate-800 pt-8 text-center text-sm">
           <p>&copy; {new Date().getFullYear()} YZ Santralım. Tüm hakları saklıdır.</p>
-          <p className="mt-2">Built with ❤ at Cloudflare</p>
+          <p className="mt-2">Built with ❤️ at Cloudflare</p>
         </div>
       </div>
     </footer>
