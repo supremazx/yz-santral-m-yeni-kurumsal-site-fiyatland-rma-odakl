@@ -6,7 +6,7 @@ const faqs = [
     answer: 'Hayır, YZ Santralım tamamen bulut tabanlıdır. İnternet bağlantısı olan herhangi bir cihazdan (bilgisayar, mobil telefon) kullanabilirsiniz. Ekstra donanım maliyetiniz olmaz.',
   },
   {
-    question: 'Mevcut telefon numaralarımı taşıyabilir miyim?',
+    question: 'Mevcut telefon numaralarımı ta��ıyabilir miyim?',
     answer: 'Evet, mevcut sabit (coğrafi veya 0850) numaralarınızı YZ Santralım sistemine kolayca taşıyabilirsiniz. Süreç boyunca size destek oluyoruz.',
   },
   {
@@ -15,11 +15,11 @@ const faqs = [
   },
   {
     question: 'API erişimi hangi planlarda mevcut?',
-    answer: 'API erişimi, "Scale" ve "Enterprise" planlarımızda mevcuttur. Kendi yazılımlarınızla (CRM, ERP vb.) entegrasyonlar yapmanıza olanak tanır.',
+    answer: 'API erişimi, "Orta" ve "Full" planlarımızda mevcuttur. Kendi yazılımlarınızla (CRM, ERP vb.) entegrasyonlar yapmanıza olanak tanır.',
   },
   {
     question: 'Teknik destek sağlıyor musunuz?',
-    answer: 'Evet, tüm planlarımızda e-posta desteği sunuyoruz. "Scale" planında öncelikli destek, "Enterprise" planında ise size özel atanmış bir müşteri temsilcisi ile 7/24 destek hizmeti veriyoruz.',
+    answer: 'Evet, tüm planlarımızda e-posta desteği sunuyoruz. "Orta" planında öncelikli destek, "Full" planında ise size özel atanmış bir müşteri temsilcisi ile 7/24 destek hizmeti veriyoruz.',
   },
   {
     question: 'Sözleşme süresi ne kadar? Taahhüt var mı?',
