@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
@@ -46,7 +46,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
       form.reset();
       onOpenChange(false);
     } catch (error) {
-      toast.error('Bir hata oluştu. L��tfen daha sonra tekrar deneyin.');
+      toast.error('Bir hata oluştu. Lütfen daha sonra tekrar deneyin.');
       console.error(error);
     } finally {
       setIsLoading(false);
