@@ -7,7 +7,7 @@ const timelineEvents = [
   { year: '2021', title: 'Fikir Doğuşu', description: 'İletişimdeki boşluğu fark ettik ve modern bir çözüm için yola çıktık.' },
   { year: '2022', title: 'İlk Prototip', description: 'Çekirdek teknolojiyi geliştirdik ve ilk başarılı testleri gerçekleştirdik.' },
   { year: '2023', title: 'Lansman', description: 'YZ Santralım, ilk müşterileriyle buluştu ve pazarda yerini aldı.' },
-  { year: '2024', title: 'Büyüme', description: 'Ekibimizi genişlettik ve yüzlerce işletmeye hizmet vermeye başladık.' },
+  { year: '2024', title: 'B��yüme', description: 'Ekibimizi genişlettik ve yüzlerce işletmeye hizmet vermeye başladık.' },
 ];
 const founders = [
     { name: 'Yusuf Rende', title: 'Kurucu & CEO', avatar: 'https://i.pravatar.cc/150?img=6' },
@@ -33,7 +33,7 @@ export function AboutPage() {
                 <CardTitle className="mt-4">Misyonumuz</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">İletişim teknolojisini demokratikleştirerek işletmelerin büyümesine olanak sağlamak.</p>
+                <p className="text-muted-foreground">Yapay Zekalı İletişim teknolojilerinin kolay kullanımlı ve ulaşılabilir olmasıını hedefliyoruz.</p>
               </CardContent>
             </Card>
             <Card className="shadow-soft">
