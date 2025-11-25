@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Zap, ShieldCheck, BarChart, Users, PhoneCall, Cloud, Phone, MessageCircle } from 'lucide-react';
+import { Zap, ShieldCheck, BarChart, Users, PhoneCall, Cloud, Phone, MessageCircle, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 const features = [
   {
@@ -40,7 +40,12 @@ const features = [
   {
     icon: <MessageCircle className="h-8 w-8 text-primary" />,
     title: 'WhatsApp Entegrasyonu',
-    description: 'Müşterilerinizle WhatsApp üzerinden doğrudan iletişim kurun ve santral çağrılarını mesajlara dönüştürün.',
+    description: 'Müşterilerinizle WhatsApp ��zerinden doğrudan iletişim kurun ve santral çağrılarını mesajlara dönüştürün.',
+  },
+  {
+    icon: <ExternalLink className="h-8 w-8 text-primary" />,
+    title: 'AI Veri Entegrasyonu',
+    description: 'Yapay Zekâ\'dan aldığınız bilgileri kendi CRM\'inize, Google Sheets\'e veya Telegram\'ınıza gönderin.',
   },
 ];
 export function FeaturesGrid() {
