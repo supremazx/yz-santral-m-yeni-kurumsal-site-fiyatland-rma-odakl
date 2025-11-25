@@ -13,11 +13,11 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'başlangıç',
     title: 'Başlangıç Paketi',
-    description: 'Küçük ekipler için temel özellikler.',
+    description: 'Küçük ekipler i��in temel özellikler.',
     monthlyPrice: 2500,
     yearlyPrice: 24000,
     features: [
-      '5 Kullanıcı',
+      '5 Kullan��cı',
       'Sesli Otomatik Arama',
       'Standart Raporlama',
       'Sınırsız Kampanya Oluşturma',
@@ -41,6 +41,8 @@ export const pricingPlans: PricingPlan[] = [
       'Sesli Otomatik Arama',
       'AI Veri Entegrasyonu',
       'WhatsApp Üzerinden Aylık Ücretle Sınırsız Mesaj Atma',
+      'AI Ajan Paketleri',
+      'Gelişmiş AI Ajan Oluşturma Seçenekleri',
     ],
     highlight: true,
     cta: 'Ortanca Paketi Seçin',
