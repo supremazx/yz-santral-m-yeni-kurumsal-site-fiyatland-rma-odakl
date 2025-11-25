@@ -3,8 +3,8 @@ export interface PricingPlan {
   id: PlanId;
   title: string;
   description: string;
-  monthlyPrice: number;
-  yearlyPrice: number;
+  monthlyPrice: number | null;
+  yearlyPrice: number | null;
   features: string[];
   highlight?: boolean;
   cta: string;
@@ -40,7 +40,7 @@ export const pricingPlans: PricingPlan[] = [
       'Yapay Zeka ile Otomatik Arama',
       'Sesli Otomatik Arama',
       'AI Veri Entegrasyonu',
-      'WhatsApp Üzerinden Aylık Ücretle Sınırsız Mesaj Atma',
+      'WhatsApp ��zerinden Aylık Ücretle Sınırsız Mesaj Atma',
     ],
     highlight: true,
     cta: 'Ortanca Paketi Seçin',
@@ -49,8 +49,8 @@ export const pricingPlans: PricingPlan[] = [
     id: 'terzi',
     title: 'Terzi Paketi',
     description: 'Kişiye özel çözümler.',
-    monthlyPrice: 10000,
-    yearlyPrice: 96000,
+    monthlyPrice: null,
+    yearlyPrice: null,
     features: [
       'Sınırsız Kullanıcı',
       'Tüm Orta Plan Özellikleri',
@@ -60,6 +60,7 @@ export const pricingPlans: PricingPlan[] = [
       'Kişisel Müşteri Temsilcisi',
       'WhatsApp Entegrasyonu (Gelişmiş)',
       'AI Veri Entegrasyonu',
+      'Aklımda farklı bir proje mi var? Bizimle iletişime geçiniz!',
     ],
     cta: 'Teklif Alın',
   },
