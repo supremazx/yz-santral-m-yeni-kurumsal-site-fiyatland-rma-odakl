@@ -17,7 +17,7 @@ export function Hero() {
             İşletmeniz için Yapay Zekalı <span className="text-gradient">Bulut Santral Çözümleri</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-balance">
-            YZ Santralım ile iletişim altyapınızı modernize edin, verimliliği artırın ve müşteri memnuniyetini en üst seviyeye taşıyın.
+            Yzsantralim.com ile iletişim altyapınızı modernize edin, verimliliği artırın ve müşteri memnuniyetini en üst seviyeye taşıyın.
           </p>
         </motion.div>
         <motion.div
