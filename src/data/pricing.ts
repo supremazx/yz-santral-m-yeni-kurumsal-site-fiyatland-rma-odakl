@@ -13,7 +13,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'başlangıç',
     title: 'Başlangıç Paketi',
-    description: 'Küçük ekipler için temel özellikler.',
+    description: 'K��çük ekipler için temel özellikler.',
     monthlyPrice: 2500,
     yearlyPrice: 24000,
     features: [
@@ -40,7 +40,7 @@ export const pricingPlans: PricingPlan[] = [
       'Yapay Zeka ile Otomatik Arama',
       'Sesli Otomatik Arama',
       'AI Veri Entegrasyonu',
-      'WhatsApp ��zerinden Aylık Ücretle Sınırsız Mesaj Atma',
+      'WhatsApp Üzerinden Aylık Ücretle Sınırsız Mesaj Atma',
     ],
     highlight: true,
     cta: 'Ortanca Paketi Seçin',
@@ -51,17 +51,7 @@ export const pricingPlans: PricingPlan[] = [
     description: 'Kişiye özel çözümler.',
     monthlyPrice: null,
     yearlyPrice: null,
-    features: [
-      'Sınırsız Kullanıcı',
-      'Tüm Orta Plan Özellikleri',
-      'Özel Entegrasyonlar',
-      'Oto Sesli Arama (Gelişmiş)',
-      '7/24 Teknik Destek',
-      'Kişisel Müşteri Temsilcisi',
-      'WhatsApp Entegrasyonu (Gelişmiş)',
-      'AI Veri Entegrasyonu',
-      'Aklımda farklı bir proje mi var? Bizimle iletişime geçiniz!',
-    ],
+    features: ['Aklımda farklı bir proje mi var? Bizimle iletişime geçiniz!'],
     cta: 'Teklif Alın',
   },
 ];
