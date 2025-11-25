@@ -2,12 +2,12 @@ import { Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-import type { PricingPlan } from '@/data/pricing';
+import type { PricingPlan, PlanId } from '@/data/pricing';
 interface PricingCardProps {
   plan: PricingPlan;
   isYearly: boolean;
   isSelected: boolean;
-  onSelect: (id: string) => void;
+  onSelect: (id: PlanId) => void;
 }
 export function PricingCard({ plan, isYearly, isSelected, onSelect }: PricingCardProps) {
   const price = isYearly ? plan.yearlyPrice : plan.monthlyPrice;

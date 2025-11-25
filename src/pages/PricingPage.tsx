@@ -1,23 +1,22 @@
 import { useState, useCallback } from 'react';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
-import { pricingPlans } from '@/data/pricing';
+import { pricingPlans, PlanId } from '@/data/pricing';
 import { PricingCard } from '@/components/PricingCard';
 import { motion } from 'framer-motion';
 import { usePricingStore } from '@/store/usePricingStore';
 import { QuoteModal } from '@/components/QuoteModal';
 import { FAQAccordion } from '@/components/FAQAccordion';
 export function PricingPage() {
-  // FIX: Replaced unstable object selector with individual primitive selectors to prevent infinite loops.
   const billingCycle = usePricingStore((s) => s.billingCycle);
   const setBillingCycle = usePricingStore((s) => s.setBillingCycle);
   const selectedPlan = usePricingStore((s) => s.selectedPlan);
   const setSelectedPlan = usePricingStore((s) => s.setSelectedPlan);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isYearly = billingCycle === 'yearly';
-  const handlePlanSelect = useCallback((planId: typeof selectedPlan) => {
+  const handlePlanSelect = useCallback((planId: PlanId) => {
     setSelectedPlan(planId);
-    if (planId === 'enterprise') {
+    if (planId === 'full') {
       setIsModalOpen(true);
     }
   }, [setSelectedPlan]);
@@ -58,7 +57,7 @@ export function PricingPage() {
                     plan={plan}
                     isYearly={isYearly}
                     isSelected={selectedPlan === plan.id}
-                    onSelect={() => handlePlanSelect(plan.id)}
+                    onSelect={handlePlanSelect}
                   />
                 </motion.div>
               ))}
