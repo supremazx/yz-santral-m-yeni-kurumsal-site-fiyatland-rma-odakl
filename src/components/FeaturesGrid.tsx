@@ -1,7 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Zap, ShieldCheck, BarChart, Users, PhoneCall, Cloud, MessageCircle, ExternalLink } from 'lucide-react';
+import { Zap, ShieldCheck, BarChart, Users, PhoneCall, Cloud, MessageCircle, ExternalLink, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 const features = [
+  {
+    icon: <Phone className="h-8 w-8 text-primary" />,
+    title: 'Oto Sesli Arama',
+    description: 'Müşterilerinizi sesli komutlarla otomatik arama yaparak doğru departmana yönlendirin.',
+  },
   {
     icon: <MessageCircle className="h-8 w-8 text-primary" />,
     title: 'WhatsApp Entegrasyonu',
