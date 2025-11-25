@@ -9,6 +9,7 @@ const navLinks = [
   { to: '/features', text: 'Özellikler' },
   { to: '/pricing', text: 'Fiyatlandırma' },
   { to: '/about', text: 'Hakkımızda' },
+  { to: '/faq', text: 'SSS' },
   { to: '/contact', text: 'İletişim' },
 ];
 export function Header() {
