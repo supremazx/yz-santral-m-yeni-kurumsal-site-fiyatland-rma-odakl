@@ -17,9 +17,11 @@ export const pricingPlans: PricingPlan[] = [
     monthlyPrice: 2500,
     yearlyPrice: 24000,
     features: [
-      '5 Kullanıcı',
+      '5 Kullanıc��',
       'Sesli Otomatik Arama',
       'Standart Raporlama',
+      'Sınırsız Kampanya Oluşturma',
+      'Kendi Numaranızı Getirin',
     ],
     cta: 'Başlayın',
   },
