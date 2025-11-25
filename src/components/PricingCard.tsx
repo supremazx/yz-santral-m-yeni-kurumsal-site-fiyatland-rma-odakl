@@ -29,9 +29,15 @@ export function PricingCard({ plan, isYearly, isSelected, onSelect }: PricingCar
         <CardDescription>{plan.description}</CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">
-        <div className="text-center mb-6">
-          <span className="text-4xl font-bold">₺{price}</span>
-          <span className="text-muted-foreground">/{isYearly ? 'yıl' : 'ay'}</span>
+        <div className="text-center mb-6 h-10 flex items-center justify-center">
+          {price === null ? (
+            <span className="text-2xl md:text-3xl font-bold text-primary">İletişime Geçiniz</span>
+          ) : (
+            <>
+              <span className="text-4xl font-bold">₺{price}</span>
+              <span className="text-muted-foreground self-end ml-1">/{isYearly ? 'yıl' : 'ay'}</span>
+            </>
+          )}
         </div>
         <ul className="space-y-3">
           {plan.features.map((feature) => (
