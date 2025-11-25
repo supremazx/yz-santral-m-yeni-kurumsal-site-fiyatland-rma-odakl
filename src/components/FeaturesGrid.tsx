@@ -5,7 +5,7 @@ const features = [
   {
     icon: <Phone className="h-8 w-8 text-primary" />,
     title: 'Oto Sesli Arama',
-    description: 'M��şterilerinizi sesli komutlarla otomatik arama yaparak doğru departmana yönlendirin.',
+    description: 'Sesli arama için izin aldığınız müşterileriniz, üyelerinizi sınırsız bir şekilde aramanıza ses kaydı ekleyerek veya Yapay zeka ajanı ekleyerek arayabilirsiniz.',
   },
   {
     icon: <MessageCircle className="h-8 w-8 text-primary" />,
@@ -19,7 +19,7 @@ const features = [
   },
   {
     icon: <Cloud className="h-8 w-8 text-primary" />,
-    title: 'Bulut Tabanlı Altyapı',
+    title: 'Bulut Tabanlı Altyap��',
     description: 'Donanım maliyeti olmadan, internet olan her yerden santralinize erişin.',
   },
   {
