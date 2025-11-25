@@ -65,8 +65,16 @@ export function AboutPage() {
                             <AvatarImage src={founder.avatar} />
                             <AvatarFallback>{founder.name.charAt(0)}</AvatarFallback>
                         </Avatar>
-                        <h3 className="text-xl font-semibold">{founder.name}</h3>
-                        <p className="text-primary">{founder.title}</p>
+                        <h3 className="text-xl font-semibold">
+                          <a href="https://www.linkedin.com/in/yusufrende/" target="_blank" rel="noopener noreferrer" className="hover:text-primary/90 transition-colors">
+                            {founder.name}
+                          </a>
+                        </h3>
+                        <p className="text-primary">
+                          <a href="https://www.linkedin.com/in/yusufrende/" target="_blank" rel="noopener noreferrer" className="hover:text-primary/90 transition-colors">
+                            {founder.title}
+                          </a>
+                        </p>
                     </Card>
                 ))}
             </div>
