@@ -18,6 +18,10 @@ const faqs = [
     answer: 'Tüm paketlerimizde CRM, ERP, Telegram ve API bağlantısına sahip olan tüm platformları destekliyoruz.',
   },
   {
+    question: 'Yapay Zeka Hizmetine ücret ödeyecek miyim ?',
+    answer: 'Evet, dakika başına yazacağınız yapay zeka prompt ve konuşma uzunluğuna göre bir ücret ödemeniz gerekiyor ama biz bu ücrete ek birşey yansıtmıyoruz.',
+  },
+  {
     question: 'Teknik destek sağlıyor musunuz?',
     answer: 'Evet, tüm paketlerimizde ücretsiz destek sağlamaktayız. E-posta yoluyla hızlı yanıtlar alabilirsiniz, gelişmiş planlarda öncelikli destek de mevcut.',
   },
