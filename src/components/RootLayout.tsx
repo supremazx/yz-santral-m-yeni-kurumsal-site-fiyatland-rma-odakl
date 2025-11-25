@@ -22,21 +22,15 @@ export function RootLayout({ children, title, description }: RootLayoutProps) {
       document.head.appendChild(newMeta);
     }
   }, [title, description]);
-
   useEffect(() => {
+    // Initialize analytics variant safely on mount
     try {
       if (typeof window !== 'undefined') {
-        const state = useAnalyticsStore.getState();
-        if (state && typeof state.initializeVariant === 'function') {
-          state.initializeVariant();
-        }
+        useAnalyticsStore.getState().initializeVariant();
       }
     } catch (e) {
-      // swallow errors to avoid breaking the app
+      console.warn('Failed to initialize analytics variant:', e);
     }
-  }, []);
-
-  useEffect(() => {
     // Cloudflare Web Analytics
     const script = document.createElement('script');
     script.defer = true;
@@ -63,4 +57,3 @@ export function RootLayout({ children, title, description }: RootLayoutProps) {
     </div>
   );
 }
-//
