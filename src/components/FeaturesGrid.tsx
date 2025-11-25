@@ -5,7 +5,7 @@ const features = [
   {
     icon: <Phone className="h-8 w-8 text-primary" />,
     title: 'Oto Sesli Arama',
-    description: 'Sesli arama için izin aldığınız müşterileriniz, üyelerinizi sınırsız bir şekilde aramanıza ses kaydı ekleyerek veya Yapay zeka ajanı ekleyerek arayabilirsiniz.',
+    description: 'Sesli arama için izin aldığınız müşterilerinizi, üyelerinizi sınırsız bir şekilde ulaşabilir, ses kaydı ekleyerek veya Yapay zeka ajanı ekleyerek arayabilirsiniz.',
   },
   {
     icon: <MessageCircle className="h-8 w-8 text-primary" />,
