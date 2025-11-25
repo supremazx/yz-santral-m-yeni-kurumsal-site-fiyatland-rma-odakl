@@ -12,23 +12,23 @@ export function PricingTable() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-display font-semibold">Şeffaf Fiyatlandırma</h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
             İhtiyaçlarınıza en uygun planı seçin. Yıllık ödemelerde %20 indirim kazanın.
           </p>
         </div>
-        <div className="flex items-center justify-center gap-4 my-8">
-          <Label htmlFor="billing-cycle">Aylık</Label>
+        <div className="flex items-center justify-center gap-2 sm:gap-4 my-8">
+          <Label htmlFor="billing-cycle" className="text-sm sm:text-base">Aylık</Label>
           <Switch
             id="billing-cycle"
             checked={isYearly}
             onCheckedChange={setIsYearly}
             aria-label="Yıllık ve aylık faturalandırma arasında geçiş yap"
           />
-          <Label htmlFor="billing-cycle">
+          <Label htmlFor="billing-cycle" className="text-sm sm:text-base">
             Yıllık <span className="text-green-500 font-medium">(%20 Tasarruf)</span>
           </Label>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
           {pricingPlans.map((plan, index) => (
             <motion.div
               key={plan.id}

@@ -40,7 +40,7 @@ const features = [
   {
     icon: <Users className="h-8 w-8 text-primary" />,
     title: 'Ekip Yönetimi',
-    description: 'Kullanıcılarınızı kolayca yönetin, yetkilendirin ve performanslarını izleyin.',
+    description: 'Kullanıc��larınızı kolayca yönetin, yetkilendirin ve performanslarını izleyin.',
   },
   {
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,
@@ -54,11 +54,11 @@ export function FeaturesGrid() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-display font-semibold">Neden Yzsantralim.com ?</h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
             İşletmenizin iletişim ihtiyaçları için tasarlanmış güçlü ve esnek özellikler.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
@@ -67,13 +67,13 @@ export function FeaturesGrid() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full text-center shadow-soft hover:shadow-lg hover:-translate-y-1 transition-all duration-300 rounded-2xl">
+              <Card className="h-full text-center shadow-soft hover:shadow-lg hover:-translate-y-1 transition-all duration-300 rounded-2xl min-h-[200px]">
                 <CardHeader className="items-center">
                   <div className="bg-primary/10 p-4 rounded-full">{feature.icon}</div>
                   <CardTitle className="mt-4">{feature.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">{feature.description}</p>
+                  <p className="text-muted-foreground text-balance">{feature.description}</p>
                 </CardContent>
               </Card>
             </motion.div>
