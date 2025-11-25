@@ -3,6 +3,21 @@ import { Zap, ShieldCheck, BarChart, Users, PhoneCall, Cloud, Phone, MessageCirc
 import { motion } from 'framer-motion';
 const features = [
   {
+    icon: <Phone className="h-8 w-8 text-primary" />,
+    title: 'Oto Sesli Arama',
+    description: 'Sesli komutlarla otomatik arama yapın ve müşterilerinizi hızlıca yönlendirin.',
+  },
+  {
+    icon: <MessageCircle className="h-8 w-8 text-primary" />,
+    title: 'WhatsApp Entegrasyonu',
+    description: 'Müşterilerinizle WhatsApp üzerinden doğrudan iletişim kurun ve santral çağrılarını mesajlara dönüştürün.',
+  },
+  {
+    icon: <ExternalLink className="h-8 w-8 text-primary" />,
+    title: 'AI Veri Entegrasyonu',
+    description: 'Yapay Zekâ\'dan ald��ğınız bilgileri kendi CRM\'inize, Google Sheets\'e veya Telegram\'ınıza gönderin.',
+  },
+  {
     icon: <Cloud className="h-8 w-8 text-primary" />,
     title: 'Bulut Tabanlı Altyapı',
     description: 'Donanım maliyeti olmadan, internet olan her yerden santralinize erişin.',
@@ -31,21 +46,6 @@ const features = [
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,
     title: 'Yüksek Güvenlik',
     description: 'Verileriniz ve görüşmeleriniz endüstri standardı güvenlik protokolleri ile korunur.',
-  },
-  {
-    icon: <Phone className="h-8 w-8 text-primary" />,
-    title: 'Oto Sesli Arama',
-    description: 'Sesli komutlarla otomatik arama yapın ve müşterilerinizi hızlıca yönlendirin.',
-  },
-  {
-    icon: <MessageCircle className="h-8 w-8 text-primary" />,
-    title: 'WhatsApp Entegrasyonu',
-    description: 'Müşterilerinizle WhatsApp ��zerinden doğrudan iletişim kurun ve santral çağrılarını mesajlara dönüştürün.',
-  },
-  {
-    icon: <ExternalLink className="h-8 w-8 text-primary" />,
-    title: 'AI Veri Entegrasyonu',
-    description: 'Yapay Zekâ\'dan aldığınız bilgileri kendi CRM\'inize, Google Sheets\'e veya Telegram\'ınıza gönderin.',
   },
 ];
 export function FeaturesGrid() {
