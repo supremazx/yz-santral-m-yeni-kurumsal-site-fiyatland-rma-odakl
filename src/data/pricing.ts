@@ -17,11 +17,9 @@ export const pricingPlans: PricingPlan[] = [
     monthlyPrice: 2500,
     yearlyPrice: 24000,
     features: [
-      '5 Kullanıcı',
-      'Temel Santral Özellikleri',
-      'Mobil Uygulama',
+      '3 Kullanıcı (1 Admin, 2 Alt Kullanıcı)',
+      'Sesli Otomatik Arama',
       'Standart Raporlama',
-      'Email Desteği',
     ],
     cta: 'Başlayın',
   },
