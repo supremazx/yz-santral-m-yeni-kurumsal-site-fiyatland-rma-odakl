@@ -14,8 +14,8 @@ const faqs = [
     answer: 'Kesinlikle. İşletmenizin ihtiyaçları değiştikçe planlar arasında dilediğiniz zaman yükseltme veya düşürme yapabilirsiniz. Esnek yapıya sahibiz.',
   },
   {
-    question: 'API erişimi hangi planlarda mevcut?',
-    answer: 'API erişimi, "Ortanca" ve "Terzi" planlarımızda mevcuttur. Kendi yazılımlarınızla (CRM, ERP vb.) entegrasyonlar yapmanıza olanak tanır.',
+    question: 'Hangi Entegrasyonları sağlıyoruz.',
+    answer: 'Tüm paketlerimizde CRM, ERP, Telegram ve API bağlantısına sahip olan tüm platformları destekliyoruz.',
   },
   {
     question: 'Teknik destek sağlıyor musunuz?',
