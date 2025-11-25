@@ -19,6 +19,9 @@ export function AboutPage() {
         <section className="text-center">
           <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground">Hakkımızda</h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+            VoIP Piyasasında 18 yıllık deneyimiyle şirketinizin yanında.
+          </p>
+          <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             YZ Santralım olarak, işletmelerin iletişimini basitleştirmek ve güçlendirmek için en son teknolojiyi kullanıyoruz. Misyonumuz, her ölçekteki şirkete erişilebilir, güvenilir ve yenilikçi bulut santral çözümleri sunmaktır.
           </p>
         </section>
@@ -48,7 +51,7 @@ export function AboutPage() {
                 <CardTitle className="mt-4">Ekibimiz</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Alanında uzman, tutkulu ve dinamik bir ekiple gelece��i inşa ediyoruz.</p>
+                <p className="text-muted-foreground">Alanında uzman, tutkulu ve dinamik bir ekiple geleceği inşa ediyoruz.</p>
               </CardContent>
             </Card>
           </div>
