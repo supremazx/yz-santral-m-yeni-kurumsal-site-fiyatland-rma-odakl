@@ -11,10 +11,10 @@ const faqs = [
   },
   {
     question: 'Fiyatlandırma planları arasında geçiş yapabilir miyim?',
-    answer: 'Kesinlikle. İşletmenizin ihtiyaçları değiştikçe planlar arasında dilediğiniz zaman yükseltme veya düşürme yapabilirsiniz. Esnek yapıya sahibiz.',
+    answer: 'Kesinlikle. İşletmenizin ihtiyaçları değiştikçe planlar arasında dilediğiniz zaman y��kseltme veya düşürme yapabilirsiniz. Esnek yapıya sahibiz.',
   },
   {
-    question: 'Hangi Entegrasyonları sağlıyoruz.',
+    question: 'Hangi Entegrasyonları sağlıyoruz ?',
     answer: 'Tüm paketlerimizde CRM, ERP, Telegram ve API bağlantısına sahip olan tüm platformları destekliyoruz.',
   },
   {
