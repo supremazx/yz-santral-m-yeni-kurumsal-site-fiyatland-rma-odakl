@@ -18,7 +18,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2 text-sm">
               <li><a href="#features" className="hover:text-primary transition-colors">Özellikler</a></li>
               <li><a href="#pricing" className="hover:text-primary transition-colors">Fiyatlandırma</a></li>
-              <li><a href="mailto:destek@yzsantralim.com" className="hover:text-primary transition-colors">Destek</a></li>
+              <li><a href="/contact" className="hover:text-primary transition-colors">İletişim</a></li>
             </ul>
           </div>
           <div>
@@ -31,7 +31,7 @@ export function Footer() {
         </div>
         <div className="mt-8 border-t border-slate-800 pt-8 text-center text-sm">
           <p>&copy; {new Date().getFullYear()} Yzsantralim.com. Tüm hakları saklıdır.</p>
-          <p className="mt-2">Built with ❤️ at Cloudflare</p>
+          <p className="mt-2">Built with ���️ at Cloudflare</p>
         </div>
       </div>
     </footer>
