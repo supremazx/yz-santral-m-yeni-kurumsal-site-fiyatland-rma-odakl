@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Building, Target, Users } from 'lucide-react';
-import { Testimonials } from '@/components/Testimonials';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 const timelineEvents = [
@@ -11,8 +10,7 @@ const timelineEvents = [
   { year: '2024', title: 'Büyüme', description: 'Ekibimizi genişlettik ve yüzlerce işletmeye hizmet vermeye başladık.' },
 ];
 const founders = [
-    { name: 'Ali Veli', title: 'Kurucu & CEO', avatar: 'https://i.pravatar.cc/150?img=4' },
-    { name: 'Zeynep Çelik', title: 'Kurucu & CTO', avatar: 'https://i.pravatar.cc/150?img=5' },
+    { name: 'Yusuf Rende', title: 'Kurucu & CEO', avatar: 'https://i.pravatar.cc/150?img=6' },
 ];
 export function AboutPage() {
   return (
@@ -50,7 +48,7 @@ export function AboutPage() {
                 <CardTitle className="mt-4">Ekibimiz</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Alanında uzman, tutkulu ve dinamik bir ekiple geleceği inşa ediyoruz.</p>
+                <p className="text-muted-foreground">Alanında uzman, tutkulu ve dinamik bir ekiple gelece��i inşa ediyoruz.</p>
               </CardContent>
             </Card>
           </div>
@@ -70,7 +68,6 @@ export function AboutPage() {
                 ))}
             </div>
         </section>
-        <Testimonials />
       </div>
     </div>
   );
