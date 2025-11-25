@@ -13,7 +13,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'başlangıç',
     title: 'Başlangıç Paketi',
-    description: 'K��çük ekipler için temel özellikler.',
+    description: 'Küçük ekipler için temel özellikler.',
     monthlyPrice: 2500,
     yearlyPrice: 24000,
     features: [
