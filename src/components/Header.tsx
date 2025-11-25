@@ -6,7 +6,6 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/s
 import { useIsMobile } from '@/hooks/use-mobile';
 const navLinks = [
   { to: '/', text: 'Ana Sayfa' },
-  { to: '/pricing', text: 'Fiyatlandırma' },
   { to: '/about', text: 'Hakkımızda' },
   { to: '/faq', text: 'SSS' },
   { to: '/contact', text: 'İletişim' },
