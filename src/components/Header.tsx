@@ -12,7 +12,7 @@ const navLinks = [
 ];
 export function Header() {
   const isMobile = useIsMobile();
-  const commonNavClasses = "font-medium text-muted-foreground hover:text-foreground transition-colors";
+  const commonNavClasses = "font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center";
   const activeNavClasses = "text-primary font-semibold";
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b">
@@ -32,12 +32,12 @@ export function Header() {
                   </Button>
                 </SheetTrigger>
                 <SheetContent>
-                  <nav className="flex flex-col space-y-4 mt-8">
+                  <nav className="flex flex-col space-y-2 mt-8">
                     {navLinks.map(link => (
                       <SheetClose asChild key={link.to}>
                         <NavLink
                           to={link.to}
-                          className={({ isActive }) => `${commonNavClasses} text-lg ${isActive ? activeNavClasses : ''}`}
+                          className={({ isActive }) => `${commonNavClasses} text-lg p-4 rounded-md ${isActive ? activeNavClasses + ' bg-accent' : ''}`}
                         >
                           {link.text}
                         </NavLink>
@@ -49,7 +49,7 @@ export function Header() {
             </div>
           ) : (
             <>
-              <nav className="hidden md:flex items-center space-x-8">
+              <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
                 {navLinks.map(link => (
                   <NavLink
                     key={link.to}
@@ -61,7 +61,7 @@ export function Header() {
                 ))}
               </nav>
               <div className="flex items-center gap-4">
-                <Button asChild variant="outline" className="hidden sm:inline-flex">
+                <Button asChild variant="outline" className="hidden sm:inline-flex min-h-[44px]">
                   <a href="tel:+908502445011">
                     <Phone className="mr-2 h-4 w-4" /> Bize Ulaşın
                   </a>
