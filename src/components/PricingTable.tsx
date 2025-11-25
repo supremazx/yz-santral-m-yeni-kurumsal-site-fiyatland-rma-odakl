@@ -6,7 +6,7 @@ import { PricingCard } from './PricingCard';
 import { motion } from 'framer-motion';
 export function PricingTable() {
   const [isYearly, setIsYearly] = useState(false);
-  const [selectedPlan, setSelectedPlan] = useState<PlanId>('orta');
+  const [selectedPlan, setSelectedPlan] = useState<PlanId>('ortanca');
   return (
     <section id="pricing" className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

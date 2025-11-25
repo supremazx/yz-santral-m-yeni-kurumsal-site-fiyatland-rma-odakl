@@ -16,7 +16,7 @@ export function PricingPage() {
   const isYearly = billingCycle === 'yearly';
   const handlePlanSelect = useCallback((planId: PlanId) => {
     setSelectedPlan(planId);
-    if (planId === 'full') {
+    if (planId === 'terzi') {
       setIsModalOpen(true);
     }
   }, [setSelectedPlan]);

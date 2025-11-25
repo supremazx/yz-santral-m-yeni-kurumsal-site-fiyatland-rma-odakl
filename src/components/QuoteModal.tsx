@@ -58,7 +58,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
         <DialogHeader>
           <DialogTitle>Teklif Alın</DialogTitle>
           <DialogDescription>
-            Seçtiğiniz '{getPlanTitle(selectedPlan)}' planı için bilgilerinizi doldurun. Ekibimiz sizinle iletişime geçecektir.
+            Seçtiğiniz '{getPlanTitle(selectedPlan)}' için bilgilerinizi doldurun. Ekibimiz sizinle iletişime geçecektir.
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
@@ -94,7 +94,7 @@ export function QuoteModal({ open, onOpenChange }: QuoteModalProps) {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Mesajınız (İsteğe Bağlı)</FormLabel>
+                  <FormLabel>Mesajınız (İsteğe Ba��lı)</FormLabel>
                   <FormControl>
                     <Textarea placeholder="Eklemek istediğiniz notlar..." {...field} />
                   </FormControl>

@@ -1,4 +1,4 @@
-export type PlanId = 'başlangıç' | 'orta' | 'full';
+export type PlanId = 'başlangıç' | 'ortanca' | 'terzi';
 export interface PricingPlan {
   id: PlanId;
   title: string;
@@ -12,8 +12,8 @@ export interface PricingPlan {
 export const pricingPlans: PricingPlan[] = [
   {
     id: 'başlangıç',
-    title: 'Başlangıç',
-    description: 'Küçük ekipler ve yeni başlayanlar için ideal.',
+    title: 'Başlangıç Paketi',
+    description: 'Küçük ekipler için temel özellikler.',
     monthlyPrice: 2500,
     yearlyPrice: 24000,
     features: [
@@ -27,9 +27,9 @@ export const pricingPlans: PricingPlan[] = [
     cta: 'Başlayın',
   },
   {
-    id: 'orta',
-    title: 'Orta',
-    description: 'Büyüyen işletmeler için gelişmiş özellikler.',
+    id: 'ortanca',
+    title: 'Ortanca Paketi',
+    description: 'Büyüyen işletmeler için gelişmiş araçlar.',
     monthlyPrice: 5000,
     yearlyPrice: 48000,
     features: [
@@ -43,12 +43,12 @@ export const pricingPlans: PricingPlan[] = [
       'WhatsApp Üzerinden Aylık Ücretle Sınırsız Mesaj Atma',
     ],
     highlight: true,
-    cta: 'Orta Planı Seçin',
+    cta: 'Ortanca Paketi Seçin',
   },
   {
-    id: 'full',
-    title: 'Full',
-    description: 'Büyük ölçekli operasyonlar için özel çözümler.',
+    id: 'terzi',
+    title: 'Terzi Paketi',
+    description: 'Kişiye özel çözümler.',
     monthlyPrice: 10000,
     yearlyPrice: 96000,
     features: [
