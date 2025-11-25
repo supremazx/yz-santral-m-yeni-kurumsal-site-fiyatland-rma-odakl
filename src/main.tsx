@@ -24,7 +24,7 @@ const createRouteElement = (Component: React.ElementType, title: string, descrip
 const router = createBrowserRouter([
   {
     path: "/",
-    element: createRouteElement(HomePage, "YZ Santralım - Yapay Zekalı Bulut Santral Çözümleri", "İşletmeniz için modern, esnek ve güvenilir bulut santral çözümleri."),
+    element: createRouteElement(HomePage, "YZ Santralım - Yapay Zekalı Bulut Santral Çöz��mleri", "İşletmeniz için modern, esnek ve güvenilir bulut santral çözümleri."),
     errorElement: <RouteErrorBoundary />,
   },
   {
