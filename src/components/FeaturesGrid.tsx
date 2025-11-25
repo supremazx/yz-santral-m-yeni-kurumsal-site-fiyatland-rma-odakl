@@ -5,7 +5,7 @@ const features = [
   {
     icon: <Phone className="h-8 w-8 text-primary" />,
     title: 'Oto Sesli Arama',
-    description: 'Müşterilerinizi sesli komutlarla otomatik arama yaparak doğru departmana yönlendirin.',
+    description: 'M��şterilerinizi sesli komutlarla otomatik arama yaparak doğru departmana yönlendirin.',
   },
   {
     icon: <MessageCircle className="h-8 w-8 text-primary" />,
@@ -53,7 +53,7 @@ export function FeaturesGrid() {
     <section className="py-16 md:py-24 bg-muted/30 dark:bg-background/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-display font-semibold">Neden YZ Santralım?</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-semibold">Neden Yzsantralim.com ?</h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             İşletmenizin iletişim ihtiyaçları için tasarlanmış güçlü ve esnek özellikler.
           </p>
