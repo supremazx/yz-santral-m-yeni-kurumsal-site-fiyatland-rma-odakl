@@ -24,27 +24,27 @@ const createRouteElement = (Component: React.ElementType, title: string, descrip
 const router = createBrowserRouter([
   {
     path: "/",
-    element: createRouteElement(HomePage, "YZ Santralım - Yapay Zekalı Bulut Santral Çöz��mleri", "İşletmeniz için modern, esnek ve güvenilir bulut santral çözümleri."),
+    element: createRouteElement(HomePage, "Yzsantralim.com Yapay Zeka Tabanlı IP Santral Hizmet", "İşletmeniz için modern, esnek ve güvenilir bulut santral çözümleri."),
     errorElement: <RouteErrorBoundary />,
   },
   {
     path: "/features",
-    element: createRouteElement(FeaturesPage, "Özellikler - YZ Santralım", "Gelişmiş IVR, detaylı raporlama ve daha fazlasıyla YZ Santralım'ın tüm özelliklerini keşfedin."),
+    element: createRouteElement(FeaturesPage, "Özellikler - Yzsantralim.com Yapay Zeka Tabanlı IP Santral Hizmet", "Gelişmiş IVR, detaylı raporlama ve daha fazlasıyla YZ Santralım'ın tüm özelliklerini keşfedin."),
     errorElement: <RouteErrorBoundary />,
   },
   {
     path: "/pricing",
-    element: createRouteElement(PricingPage, "Fiyatlandırma - YZ Santralım", "İşletmenizin ihtiyaçlarına ve bütçenize en uygun şeffaf fiyatlandırma planlarımızı inceleyin."),
+    element: createRouteElement(PricingPage, "Fiyatlandırma - Yzsantralim.com Yapay Zeka Tabanlı IP Santral Hizmet", "İşletmenizin ihtiyaçlarına ve bütçenize en uygun şeffaf fiyatlandırma planlarımızı inceleyin."),
     errorElement: <RouteErrorBoundary />,
   },
   {
     path: "/about",
-    element: createRouteElement(AboutPage, "Hakkımızda - YZ Santralım", "YZ Santralım'ın misyonu, vizyonu ve arkasındaki ekip hakkında daha fazla bilgi edinin."),
+    element: createRouteElement(AboutPage, "Hakkımızda - Yzsantralim.com Yapay Zeka Tabanlı IP Santral Hizmet", "YZ Santralım'ın misyonu, vizyonu ve arkasındaki ekip hakkında daha fazla bilgi edinin."),
     errorElement: <RouteErrorBoundary />,
   },
   {
     path: "/contact",
-    element: createRouteElement(ContactPage, "İletişim - YZ Santralım", "Satış ve destek ekibimizle iletişime geçin. Sorularınızı yanıtlamaktan mutluluk duyarız."),
+    element: createRouteElement(ContactPage, "İletişim - Yzsantralim.com Yapay Zeka Tabanlı IP Santral Hizmet", "Satış ve destek ekibimizle iletişime geçin. Sorularınızı yanıtlamaktan mutluluk duyarız."),
     errorElement: <RouteErrorBoundary />,
   },
 ]);
