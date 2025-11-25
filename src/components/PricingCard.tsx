@@ -11,13 +11,17 @@ interface PricingCardProps {
 }
 export function PricingCard({ plan, isYearly, isSelected, onSelect }: PricingCardProps) {
   const price = isYearly ? plan.yearlyPrice : plan.monthlyPrice;
+  const whatsappMessage = encodeURIComponent(`${plan.title} hakkında bilgi almak istiyorum`);
+  const whatsappLink = `https://wa.me/+908502445011?text=${whatsappMessage}`;
   return (
     <Card
       className={cn(
-        'flex flex-col rounded-2xl shadow-soft transition-all duration-300',
+        'flex flex-col rounded-2xl shadow-soft transition-all duration-300 cursor-pointer',
+        'hover:shadow-lg hover:-translate-y-1',
         isSelected ? 'border-primary ring-2 ring-primary shadow-lg' : 'border-border',
-        plan.highlight && 'border-primary'
+        plan.highlight && !isSelected && 'border-primary'
       )}
+      onClick={() => onSelect(plan.id)}
     >
       {plan.highlight && (
         <div className="bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider text-center py-1 rounded-t-2xl">
@@ -50,11 +54,13 @@ export function PricingCard({ plan, isYearly, isSelected, onSelect }: PricingCar
       </CardContent>
       <CardFooter>
         <Button
+          asChild
           className={cn('w-full', plan.highlight && !isSelected ? 'btn-gradient' : '')}
           variant={isSelected ? 'default' : plan.highlight ? 'default' : 'outline'}
-          onClick={() => onSelect(plan.id)}
         >
-          {plan.cta}
+          <a href={whatsappLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+            {plan.cta}
+          </a>
         </Button>
       </CardFooter>
     </Card>
