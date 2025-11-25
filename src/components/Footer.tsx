@@ -5,7 +5,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-1">
-            <h3 className="text-lg font-semibold text-white">YZ Santralım</h3>
+            <h3 className="text-lg font-semibold text-white">Yzsantralim.com</h3>
             <p className="mt-4 text-sm">İletişim altyapınızı geleceğe taşıyın.</p>
             <div className="mt-6 flex space-x-4">
               <a href="#" className="hover:text-primary transition-colors"><Github className="h-6 w-6" /></a>
@@ -30,7 +30,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-slate-800 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} YZ Santralım. Tüm hakları saklıdır.</p>
+          <p>&copy; {new Date().getFullYear()} Yzsantralim.com. Tüm hakları saklıdır.</p>
           <p className="mt-2">Built with ❤️ at Cloudflare</p>
         </div>
       </div>
