@@ -16,8 +16,8 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-white">Hızlı Linkler</h4>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><a href="/features" className="hover:text-primary transition-colors">Özellikler</a></li>
-              <li><a href="/pricing" className="hover:text-primary transition-colors">Fiyatlandırma</a></li>
+              <li><a href="/" className="hover:text-primary transition-colors">Ana Sayfa</a></li>
+              <li><a href="/about" className="hover:text-primary transition-colors">Hakkımızda</a></li>
               <li><a href="/contact" className="hover:text-primary transition-colors">İletişim</a></li>
             </ul>
           </div>

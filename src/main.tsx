@@ -10,7 +10,6 @@ import '@/index.css';
 import { RootLayout } from '@/components/RootLayout';
 import { LoadingFallback } from '@/components/LoadingFallback';
 const HomePage = lazy(() => import('@/pages/HomePage').then(module => ({ default: module.HomePage })));
-const PricingPage = lazy(() => import('@/pages/PricingPage').then(module => ({ default: module.PricingPage })));
 const AboutPage = lazy(() => import('@/pages/AboutPage').then(module => ({ default: module.AboutPage })));
 const ContactPage = lazy(() => import('@/pages/ContactPage').then(module => ({ default: module.ContactPage })));
 const FAQPage = lazy(() => import('@/pages/FAQPage').then(module => ({ default: module.FAQPage })));
@@ -24,12 +23,7 @@ const createRouteElement = (Component: React.ElementType, title: string, descrip
 const router = createBrowserRouter([
   {
     path: "/",
-    element: createRouteElement(HomePage, "Yzsantralim.com Yapay Zeka Tabanlı IP Santral Hizmet", "İşletmeniz için modern, esnek ve güvenilir bulut santral çözümleri."),
-    errorElement: <RouteErrorBoundary />,
-  },
-  {
-    path: "/pricing",
-    element: createRouteElement(PricingPage, "Fiyatlandırma - Yzsantralim.com Yapay Zeka Tabanlı IP Santral Hizmet", "İşletmenizin ihtiyaçlarına ve bütçenize en uygun şeffaf fiyatlandırma planlarımızı inceleyin."),
+    element: createRouteElement(HomePage, "Yzsantralim.com Yapay Zeka Tabanlı IP Santral Hizmet", "İşletmeniz i��in modern, esnek ve güvenilir bulut santral çözümleri."),
     errorElement: <RouteErrorBoundary />,
   },
   {
