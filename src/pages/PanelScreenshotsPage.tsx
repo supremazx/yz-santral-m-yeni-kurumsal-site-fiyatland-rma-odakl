@@ -1,8 +1,17 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogClose,
+} from '@/components/ui/dialog';
 const screenshots = [
   {
     title: 'Kampanyalar Yönetimi',
@@ -20,14 +29,16 @@ const screenshots = [
     description: 'Çağrı verileri, ajan performansı ve kampanya başarı oranları hakkında derinlemesine bilgi edinin.',
   },
 ];
+type Screenshot = (typeof screenshots)[0];
 export function PanelScreenshotsPage() {
+  const [selectedScreenshot, setSelectedScreenshot] = useState<Screenshot | null>(null);
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="py-8 md:py-10 lg:py-12">
         <section className="text-center">
           <h1 className="text-4xl md:text-6xl font-display font-bold text-foreground">Panel Ekran Görüntüleri</h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Kullanıcı panelimizin önizlemesi – Kampanyalar, AI ajanları ve raporlama araçları.
+            Kullanıcı panelimizin ��nizlemesi – Kampanyalar, AI ajanları ve raporlama araçları.
           </p>
         </section>
         <section className="py-16 md:py-24">
@@ -39,7 +50,8 @@ export function PanelScreenshotsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="w-full max-w-4xl"
+                className="w-full max-w-4xl cursor-pointer"
+                onClick={() => setSelectedScreenshot(screenshot)}
               >
                 <Card className="h-full text-center shadow-soft hover:shadow-lg hover:-translate-y-1 transition-all duration-300 rounded-2xl overflow-hidden">
                   <div className="p-4">
@@ -71,6 +83,28 @@ export function PanelScreenshotsPage() {
           </Button>
         </section>
       </div>
+      <Dialog open={!!selectedScreenshot} onOpenChange={() => setSelectedScreenshot(null)}>
+        <DialogContent className="sm:max-w-4xl p-0 border-0 bg-transparent shadow-none">
+          <div className="relative w-full h-auto max-h-[90vh] flex items-center justify-center">
+            <img
+              src={selectedScreenshot?.url}
+              alt={selectedScreenshot?.title}
+              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+            />
+            <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-sm text-white p-4 rounded-lg">
+              <DialogTitle className="text-lg font-bold">{selectedScreenshot?.title}</DialogTitle>
+              <DialogDescription className="text-sm text-white/80 mt-1">
+                {selectedScreenshot?.description}
+              </DialogDescription>
+            </div>
+          </div>
+          <DialogClose asChild>
+            <Button variant="outline" className="absolute top-4 right-4 btn-gradient">
+              Kapat
+            </Button>
+          </DialogClose>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
