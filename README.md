@@ -1,6 +1,6 @@
 # YZ Santralım - Modern Kurumsal Site
 YZ Santralım için modern, fiyatlandırma odaklı ve görsel açıdan güçlü bir kurumsal web sitesi. Mobil öncelikli, shadcn/ui ve Tailwind ile inşa edilmiş, kullanıcı deneyimini ön planda tutan bir React uygulaması.
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/supremazx/yz-santral-m-yeni-kurumsal-site-fiyatland-rma-odakl)
 ## Özellikler
 - **Görsel Mükemmellik**: Hero bölümü, özellik kartları, fiyatlandırma tabloları ve footer ile minimalist, yüksek polish UI.
 - **Fiyatlandırma Odaklı**: Üç kademeli planlar (Starter, Scale, Enterprise) ile aylık/yıllık toggle, interaktif kartlar ve teklif alma modalı.
@@ -87,7 +87,7 @@ Proje, Cloudflare Workers ile deploy edilir. Ücretsiz hesap yeterli.
 4. **Özel Domain**: `wrangler.toml` veya dashboard'da domain bağlayın.
 5. **Ortam Değişkenleri**: `wrangler secret put <KEY>` ile ekleyin (örn: API anahtarları).
 Otomatik deploy için GitHub entegrasyonunu Workers dashboard'undan etkinleştirin.
-[cloudflarebutton]
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/supremazx/yz-santral-m-yeni-kurumsal-site-fiyatland-rma-odakl)
 ## Lisans
 MIT Lisansı. Detaylar için `LICENSE` dosyasını inceleyin (varsa).
 ## Destek
