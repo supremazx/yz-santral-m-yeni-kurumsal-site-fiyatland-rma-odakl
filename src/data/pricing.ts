@@ -17,11 +17,12 @@ export const pricingPlans: PricingPlan[] = [
     monthlyPrice: 2500,
     yearlyPrice: 24000,
     features: [
-      '5 Kullanıc��',
+      '5 Kullanıcı',
       'Sesli Otomatik Arama',
       'Standart Raporlama',
       'Sınırsız Kampanya Oluşturma',
       'Kendi Numaranızı Getirin',
+      'Canlı Arama İstatistikleri',
     ],
     cta: 'Başlayın',
   },
@@ -48,7 +49,7 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'full',
     title: 'Full',
-    description: 'Büyük ölçekli operasyonlar için özel çözümler.',
+    description: 'Büyük ölçekli operasyonlar için özel ��özümler.',
     monthlyPrice: 10000,
     yearlyPrice: 96000,
     features: [
