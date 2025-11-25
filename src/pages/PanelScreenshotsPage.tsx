@@ -31,7 +31,7 @@ export function PanelScreenshotsPage() {
           </p>
         </section>
         <section className="py-16 md:py-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center gap-8">
             {screenshots.map((screenshot, index) => (
               <motion.div
                 key={screenshot.title}
@@ -39,13 +39,14 @@ export function PanelScreenshotsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="w-full max-w-4xl"
               >
                 <Card className="h-full text-center shadow-soft hover:shadow-lg hover:-translate-y-1 transition-all duration-300 rounded-2xl overflow-hidden">
                   <div className="p-4">
                     <img
                       src={screenshot.url}
                       alt={screenshot.title}
-                      className="w-full h-auto max-h-64 object-cover rounded-lg"
+                      className="w-full h-auto max-h-96 object-cover rounded-lg"
                       loading="lazy"
                     />
                   </div>
